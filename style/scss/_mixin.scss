@@ -1,0 +1,10 @@
+@mixin flex ($juatify , $align) {
+    display: flex;
+    justify-content: $juatify;
+    align-items: $align;
+}
+@mixin white-border {
+    border-right:1px solid rgba(256, 256, 256, 0.2) ;
+    border-bottom:1px solid rgba(256, 256, 256, 0.2)  ;
+    border-left:1px solid rgba(256, 256, 256, 0.2)  ;
+}
