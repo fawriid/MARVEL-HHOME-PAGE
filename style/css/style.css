@@ -14,7 +14,7 @@
   stroke-width: 1;
 }
 
-.svg-icon {
+.svg-icon-search {
   transform: rotate(-70deg);
 }
 
@@ -45,10 +45,12 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.header-div a, .flex a {
+  color: #fff;
+}
 
 a {
   text-decoration: none;
-  color: #fff;
 }
 
 .logo-img {
@@ -83,6 +85,9 @@ nav li {
   font-weight: 500;
   font-size: 1.7rem;
 }
+nav a {
+  color: #fff;
+}
 
 .nav-item {
   height: 100%;
@@ -93,7 +98,7 @@ nav li {
 }
 
 .nav-item:hover {
-  border-bottom: 2px red solid;
+  border-bottom: 2px #ec1d24 solid;
 }
 
 .marvel-unlimited-nav {
@@ -114,7 +119,7 @@ nav li {
 }
 
 .main-big-logo {
-  background-color: red;
+  background-color: #ec1d24;
   font-size: 4rem;
   letter-spacing: -4px;
   padding: 1rem;
@@ -130,13 +135,121 @@ nav li {
   align-items: center;
   color: #fff;
   background-color: #151515;
+  z-index: 5;
+  position: sticky;
+  top: 1rem;
 }
 
 .header-div, nav {
   position: sticky;
   top: 0;
   transition: 0.9s;
-  z-index: -2;
+}
+
+.header-div {
+  z-index: 1;
+}
+
+nav {
+  z-index: 2;
+}
+
+.first-main-part img {
+  height: 50vh;
+  width: 100%;
+  transform: skewY(-1deg);
+  position: relative;
+  top: -15px;
+}
+.first-main-part ul {
+  background-color: #fff;
+  list-style-type: none;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
+  top: -3.3rem;
+  height: 8rem;
+}
+.first-main-part li {
+  margin: 0 2rem;
+  padding-top: 2rem;
+}
+.first-main-part a {
+  color: black;
+}
+.first-main-part #GOTG-launch-li {
+  border-top: 4px solid #ec1d24;
+}
+.first-main-part #GOTG-launch {
+  color: #ec1d24;
+}
+.first-main-part .socialmedia-svg path,
+.first-main-part .socialmedia-svg polygon,
+.first-main-part .socialmedia-svg rect {
+  fill: #b1b1b1;
+}
+.first-main-part .socialmedia-svg {
+  font-size: 2.7rem;
+  margin-left: 1rem;
+}
+.first-main-part .socialmedia-svg:hover path {
+  fill: black;
+}
+.first-main-part .facebook-svg-li {
+  margin-left: 6rem;
+}
+
+.google-ads {
+  width: 970px;
+  height: 280px;
+  margin: 0 auto;
+  background-color: #e6ececc9;
+  text-align: center;
+}
+.google-ads p {
+  padding-top: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+.google-ads span {
+  font-weight: bold;
+}
+.google-ads .first-google-ads-button {
+  outline: none;
+  border: none;
+  background-color: #4285f5;
+  color: white;
+  width: 200px;
+  font-size: 2rem;
+  border-radius: 2px;
+  padding: 1rem;
+  box-shadow: 0.5px 0.5px 3px 0px black;
+  cursor: pointer;
+}
+.google-ads .first-google-ads-button:hover {
+  background-color: #316dd6;
+}
+.google-ads .second-google-ads-button {
+  outline: none;
+  border: none;
+  color: #a8c7ea;
+  background-color: white;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 2px;
+  font-size: 2rem;
+  box-shadow: 0.5px 0.5px 3px 0px black;
+  cursor: pointer;
+}
+.google-ads .second-google-ads-button:hover {
+  background-color: #f1f1f1;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,14 +16,14 @@
     stroke: #0cf2fa;
     stroke-width: 1;
 }
-.svg-icon{
+.svg-icon-search{
     transform:rotate(-70deg);
 }
 .svg-icon-a{
     
     font-size: 3rem;
     // margin-left: 1rem;
-    border-right: 1px solid #393939;
+    border-right: 1px solid $borderColor;
     height: 7rem;
     padding: 1rem;
     // padding-right: 1rem;
@@ -41,26 +41,29 @@ body{
     font-size: 1.7rem;
 }
 .header-div, .flex{
-    @include flex (space-around, center)
+    @include flex (space-around, center);
+    a{
+        color:$white;
+    }
     
 }
 a{
     text-decoration: none;
-    color: #fff;
 }
+
 .logo-img{
     width: 30px;
 }
 .header-div{
-    background-color: #202020;
+    background-color: $structurColor;
     height: 6.5rem;
     overflow: hidden;
     padding-left: 16rem;
 }
 nav{
-    border-top: 1px solid #393939;
+    border-top: 1px solid $borderColor;
     height: 5rem;
-    background-color: #202020;
+    background-color: $structurColor;
     overflow: hidden;
     @include flex (center, center);
     ul{
@@ -73,28 +76,23 @@ nav{
         margin: 0 1rem;
         font-weight: 500;
         font-size: 1.7rem;
-        // a{
-        //     color: #b1b1b1;
-           
-
-        // }
+        
+    }
+    a{
+        color: $white;
     }
 }
-// nav ul {
-//     height: 100%;
-//     @include flex (center,center);
-//     line-height: 5rem;
-// }
+
 .nav-item{
     height: 100%;
 }
 .nav-item:hover a{
     // border-bottom: 2px red solid;
-    color: #b1b1b1;
+    color: $beforHover;
         
 }
 .nav-item:hover {
-    border-bottom: 2px red solid;
+    border-bottom: 2px $redColor solid;
 
 }
 .marvel-unlimited-nav{
@@ -103,9 +101,9 @@ nav{
 
 .border-white{
     padding:3rem;
-    border-right:1px solid #393939;
-    border-bottom:1px solid #393939 ;
-    border-left:1px solid #393939 ;
+    border-right:1px solid $borderColor;
+    border-bottom:1px solid $borderColor ;
+    border-left:1px solid $borderColor ;
     p{
         margin:0;
     }
@@ -114,7 +112,7 @@ nav{
     }
 }
 .main-big-logo{
-    background-color: red;
+    background-color: $redColor;
     font-size: 4rem;
     letter-spacing: -4px;
     padding: 1rem;
@@ -127,11 +125,131 @@ nav{
     @include flex (center,center);
     color: #fff;
     background-color: #151515;
+    z-index: 5;
+    position: sticky;
+    top: 1rem;
 
 }
 .header-div , nav{
     position: sticky;
     top: 0;
     transition: .9s;
-    z-index: -2;
+
 }
+.header-div{
+    z-index: 1;
+}
+nav{
+    z-index: 2;
+}
+
+// ########## start main part ############ 
+ .first-main-part{
+    img{
+        height: 50vh;
+        width: 100%;
+        transform: skewY(-1deg);
+        position: relative;
+        top: -15px
+    }
+    ul{
+        // @include flex (center, center);
+        background-color:#fff;
+        list-style-type: none;
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        position: relative;
+        top: -3.3rem;
+
+        height: 8rem;
+    }
+    li{
+        margin: 0 2rem;
+        padding-top: 2rem;
+    }
+    a{
+        color: $balck;
+
+    }
+    #GOTG-launch-li{
+
+        border-top: 4px solid $redColor;
+    }
+    #GOTG-launch{
+        color: $redColor;
+    }
+    .socialmedia-svg path,
+    .socialmedia-svg polygon,
+    .socialmedia-svg rect {
+      fill: $beforHover;
+   }
+  
+    .socialmedia-svg{
+        font-size: 2.7rem;
+        margin-left: 1rem;
+     &:hover path{
+        fill: black;
+     }   
+    }
+    
+    .facebook-svg-li{
+        margin-left: 6rem;
+    }
+
+}
+.google-ads{
+    width: 970px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #e6ececc9;
+    text-align: center;
+    p{
+        padding-top: 2rem;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 200;
+    }
+    span{
+        font-weight: bold;
+    }
+    .first-google-ads-button{
+        outline: none;
+        border: none;
+        background-color: #4285f5;
+        color: white;
+        width: 200px;
+        // height: 30px;
+        font-size: 2rem;
+        border-radius: 2px;
+        // display: inline-block;
+        padding:1rem ;
+        box-shadow: .5px .5px 3px 0px black;
+        cursor: pointer;
+        &:hover{
+            background-color: #316dd6;
+        }
+    }
+    .second-google-ads-button{
+        outline: none;
+        border: none;
+        color: #a8c7ea;
+        background-color: white;
+        width: 200px;
+        // height: 30px;
+        padding: 1rem;
+        border-radius: 2px;
+        font-size: 2rem; 
+        box-shadow: .5px .5px 3px 0px black;
+        cursor: pointer;
+     &:hover{
+         background-color: rgb(241, 241, 241);
+         color: white;
+     }
+    }
+}
+
