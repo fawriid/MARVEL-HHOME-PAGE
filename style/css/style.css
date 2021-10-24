@@ -17,6 +17,9 @@
 .svg-icon-search {
   transform: rotate(-70deg);
 }
+.svg-icon-search:hover path {
+  fill: #ec1d24;
+}
 
 .svg-icon-a {
   font-size: 3rem;
@@ -62,6 +65,12 @@ a {
   height: 6.5rem;
   overflow: hidden;
   padding-left: 16rem;
+}
+.header-div a:hover {
+  color: #ec1d24;
+}
+.header-div #marvel-logo-top:hover {
+  background-color: white;
 }
 
 nav {
@@ -181,6 +190,9 @@ nav {
 .first-main-part a {
   color: black;
 }
+.first-main-part a:hover {
+  color: #ec1d24;
+}
 .first-main-part #GOTG-launch-li {
   border-top: 4px solid #ec1d24;
 }
@@ -250,6 +262,127 @@ nav {
 .google-ads .second-google-ads-button:hover {
   background-color: #f1f1f1;
   color: white;
+}
+
+.second-part-img-container {
+  width: 100%;
+  height: 680px;
+  background-color: #151515;
+  overflow: hidden;
+}
+.second-part-img-container > img {
+  width: 70%;
+  height: 680px;
+  position: relative;
+  left: 300px;
+  transform: skew(-3deg);
+}
+.second-part-img-container .marvel-logo {
+  width: 170px;
+  height: 170px;
+  display: inline-block;
+  position: relative;
+  left: -15px;
+}
+.second-part-img-container .logo-and-links {
+  text-align: start;
+  position: relative;
+  top: 24rem;
+  left: 20rem;
+}
+.second-part-img-container .logo-and-links p {
+  color: wheat;
+  font-size: 2.5rem;
+}
+.second-part-img-container .logo-and-links button {
+  offset: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  margin-left: 5rem;
+  position: relative;
+}
+.second-part-img-container .logo-and-links button::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  width: 100%;
+  height: 100%;
+}
+.second-part-img-container .logo-and-links button::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  height: 100%;
+}
+.second-part-img-container .logo-and-links button:hover ::before {
+  border-color: #393939;
+}
+.second-part-img-container .logo-and-links button:hover {
+  background-color: #ec1d24;
+}
+
+.second-part-widget-container {
+  margin: o auto;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  top: -5rem;
+  overflow: hidden;
+}
+
+.second-part-widget-img {
+  min-width: 200px;
+  width: 80%;
+}
+
+.second-part-widgets-conatiner {
+  font-size: 2.1rem;
+  margin-top: 2rem;
+  width: 245%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.second-part-widgets-conatiner h5 {
+  color: #999999;
+}
+.second-part-widgets-conatiner a {
+  color: black;
+}
+.second-part-widgets-conatiner a:hover {
+  color: #ec1d24;
+}
+.second-part-widgets-conatiner #second-part-widget-last-img-title {
+  margin-top: 2rem;
+}
+.second-part-widgets-conatiner img {
+  position: relative;
+  transition: transform 0.4s ease;
+}
+.second-part-widgets-conatiner img:hover {
+  transform: scale(1.01);
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */
