@@ -70,7 +70,7 @@ a {
   color: #ec1d24;
 }
 .header-div #marvel-logo-top:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 nav {
@@ -171,7 +171,7 @@ nav {
   top: -15px;
 }
 .first-main-part ul {
-  background-color: #fff;
+  background-color: white;
   list-style-type: none;
   width: 85%;
   margin: 0 auto;
@@ -181,6 +181,7 @@ nav {
   font-size: 2rem;
   position: relative;
   top: -3.3rem;
+  overflow: hidden;
   height: 8rem;
 }
 .first-main-part li {
@@ -216,7 +217,7 @@ nav {
 }
 
 .google-ads {
-  width: 970px;
+  width: 50%;
   height: 280px;
   margin: 0 auto;
   background-color: #e6ececc9;
@@ -264,40 +265,42 @@ nav {
   color: white;
 }
 
-.second-part-img-container {
+.second-part-img-container, .third-part-img-container {
   width: 100%;
   height: 680px;
   background-color: #151515;
   overflow: hidden;
 }
-.second-part-img-container > img {
+.second-part-img-container > img, .third-part-img-container > img {
   width: 70%;
   height: 680px;
   position: relative;
   left: 300px;
   transform: skew(-3deg);
 }
-.second-part-img-container .marvel-logo {
+.second-part-img-container .marvel-logo, .third-part-img-container .marvel-logo {
   width: 170px;
   height: 170px;
   display: inline-block;
   position: relative;
   left: -15px;
 }
-.second-part-img-container .logo-and-links {
+.second-part-img-container .logo-and-links, .second-part-img-container .logo-and-links-third, .third-part-img-container .logo-and-links, .third-part-img-container .logo-and-links-third {
+  width: 30%;
   text-align: start;
   position: relative;
-  top: 24rem;
+  top: 18rem;
   left: 20rem;
 }
-.second-part-img-container .logo-and-links p {
-  color: wheat;
+.second-part-img-container .logo-and-links p, .second-part-img-container .logo-and-links-third p, .third-part-img-container .logo-and-links p, .third-part-img-container .logo-and-links-third p {
+  color: white;
   font-size: 2.5rem;
+  margin-bottom: 4rem;
 }
-.second-part-img-container .logo-and-links button {
+.second-part-img-container .logo-and-links button, .second-part-img-container .logo-and-links-third button, .third-part-img-container .logo-and-links button, .third-part-img-container .logo-and-links-third button {
   offset: none;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 2rem;
   padding: 1rem;
   font-weight: bold;
@@ -307,39 +310,44 @@ nav {
   margin-left: 5rem;
   position: relative;
 }
-.second-part-img-container .logo-and-links button::before {
+.second-part-img-container .logo-and-links button::before, .second-part-img-container .logo-and-links-third button::before, .third-part-img-container .logo-and-links button::before, .third-part-img-container .logo-and-links-third button::before {
   content: "";
   position: absolute;
   top: -10px;
   right: -10px;
-  border-right: 2px solid white;
-  border-top: 2px solid white;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
   width: 100%;
   height: 100%;
 }
-.second-part-img-container .logo-and-links button::after {
+.second-part-img-container .logo-and-links button::after, .second-part-img-container .logo-and-links-third button::after, .third-part-img-container .logo-and-links button::after, .third-part-img-container .logo-and-links-third button::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: -10px;
-  border-left: 2px solid white;
-  border-bottom: 2px solid white;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   width: 100%;
   height: 100%;
 }
-.second-part-img-container .logo-and-links button:hover ::before {
+.second-part-img-container .logo-and-links button:hover ::before, .second-part-img-container .logo-and-links-third button:hover ::before, .third-part-img-container .logo-and-links button:hover ::before, .third-part-img-container .logo-and-links-third button:hover ::before {
   border-color: #393939;
 }
-.second-part-img-container .logo-and-links button:hover {
+.second-part-img-container .logo-and-links button:hover, .second-part-img-container .logo-and-links-third button:hover, .third-part-img-container .logo-and-links button:hover, .third-part-img-container .logo-and-links-third button:hover {
   background-color: #ec1d24;
 }
 
-.second-part-widget-container {
+.second-main-part-img-btn:hover .marvel-logo {
+  background-color: #ec1d24;
+  width: 20px;
+}
+
+.second-part-widget-container, .third-part-widget-container {
   margin: o auto;
   width: 80%;
   height: auto;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -348,12 +356,12 @@ nav {
   overflow: hidden;
 }
 
-.second-part-widget-img {
+.second-part-widget-img, .third-part-widget-img {
   min-width: 200px;
   width: 80%;
 }
 
-.second-part-widgets-conatiner {
+.second-part-widgets-conatiner, .third-part-widgets-container {
   font-size: 2.1rem;
   margin-top: 2rem;
   width: 245%;
@@ -364,25 +372,39 @@ nav {
   padding: 2rem;
   text-align: center;
 }
-.second-part-widgets-conatiner h5 {
+.second-part-widgets-conatiner h5, .third-part-widgets-container h5 {
   color: #999999;
 }
-.second-part-widgets-conatiner a {
+.second-part-widgets-conatiner a, .third-part-widgets-container a {
   color: black;
 }
-.second-part-widgets-conatiner a:hover {
+.second-part-widgets-conatiner a:hover, .third-part-widgets-container a:hover {
   color: #ec1d24;
 }
-.second-part-widgets-conatiner #second-part-widget-last-img-title {
+.second-part-widgets-conatiner #second-part-widget-last-img-title, .third-part-widgets-container #second-part-widget-last-img-title {
   margin-top: 2rem;
 }
-.second-part-widgets-conatiner img {
+.second-part-widgets-conatiner img, .third-part-widgets-container img {
   position: relative;
   transition: transform 0.4s ease;
 }
-.second-part-widgets-conatiner img:hover {
+.second-part-widgets-conatiner img:hover, .third-part-widgets-container img:hover {
   transform: scale(1.01);
   opacity: 0.8;
+}
+
+.third-part-main {
+  margin-top: 11rem;
+}
+
+.third-part-widgets-container span {
+  color: #999999;
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
+}
+
+.third-part-widgets-title {
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
