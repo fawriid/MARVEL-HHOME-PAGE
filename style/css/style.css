@@ -407,4 +407,232 @@ nav {
   margin-top: 1rem;
 }
 
+.news-container-container {
+  margin-top: 3rem;
+}
+
+.news-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.news-container a {
+  text-decoration: none;
+  color: black;
+}
+.news-container a:hover {
+  color: #ec1d24;
+}
+.news-container span {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #999999;
+}
+.news-container .the-latest {
+  font-size: 2.5rem;
+  width: 60%;
+  padding: 2rem;
+  position: relative;
+}
+.news-container .the-latest h1 {
+  font-size: 3.4rem;
+}
+.news-container .the-hype-box {
+  width: 20%;
+  padding: 1rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.the-latest::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  width: 3px;
+  height: 30px;
+  transform: rotate(45deg);
+  margin-left: 7.5rem;
+  background-color: rosybrown;
+}
+
+.the-latest::after {
+  content: "";
+  position: absolute;
+  top: 85px;
+  width: 3px;
+  height: 30px;
+  transform: rotate(45deg);
+  margin-left: 2rem;
+  background-color: rosybrown;
+}
+
+.hype-box-title-design .design-div-1 {
+  position: absolute;
+  top: 3.4rem;
+  width: 200px;
+  height: 2px;
+  background-color: rosybrown;
+}
+.hype-box-title-design .design-div-2 {
+  position: absolute;
+  top: 4.6rem;
+  left: -2.4rem;
+  width: 40px;
+  height: 3px;
+  background-color: rosybrown;
+  transform: rotate(140deg);
+}
+.hype-box-title-design .design-div-3 {
+  height: 70px;
+  width: 3px;
+  position: absolute;
+  left: -2rem;
+  top: 6rem;
+  background-color: rosybrown;
+}
+
+.hype-box-title-design-end {
+  position: relative;
+}
+.hype-box-title-design-end .design-div-1 {
+  position: absolute;
+  left: 6.5rem;
+  bottom: 3.4rem;
+  width: 200px;
+  height: 2px;
+  background-color: rosybrown;
+}
+.hype-box-title-design-end .design-div-2 {
+  position: absolute;
+  bottom: 4.6rem;
+  right: -2.4rem;
+  width: 40px;
+  height: 3px;
+  background-color: rosybrown;
+  transform: rotate(140deg);
+}
+.hype-box-title-design-end .design-div-3 {
+  height: 70px;
+  width: 2px;
+  position: absolute;
+  right: -2rem;
+  bottom: 6rem;
+  background-color: rosybrown;
+}
+
+.the-hype-box-title {
+  padding-top: 2rem;
+  width: 90%;
+}
+
+.first-latest-object {
+  padding-top: 3rem;
+}
+
+.the-latest-objects {
+  margin-top: 2rem;
+  border-bottom: 2px solid #393939;
+  padding-bottom: 1rem;
+  display: flex;
+}
+.the-latest-objects div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 2.2rem;
+}
+.the-latest-objects img {
+  width: 100%;
+  min-width: 280px;
+  background-position: center;
+  background-size: cover;
+}
+.the-latest-objects img:hover {
+  transform: scale(1.01);
+  opacity: 0.8;
+}
+.the-latest-objects .news-hype-object-img {
+  width: 50%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.first-hype-box-object {
+  padding-top: 3rem;
+}
+
+.the-hype-box-objects {
+  margin-top: 2rem;
+  border-bottom: 2px solid #393939;
+  padding-bottom: 1rem;
+  display: flex;
+}
+.the-hype-box-objects div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 2rem;
+}
+.the-hype-box-objects div a {
+  margin-top: 1rem;
+}
+.the-hype-box-objects img {
+  width: 100%;
+  min-width: 100px;
+}
+.the-hype-box-objects img:hover {
+  transform: scale(1.01);
+  opacity: 0.8;
+}
+.the-hype-box-objects .news-hype-object-img {
+  width: 30%;
+  overflow: hidden;
+  height: 200px;
+}
+
+.load-more-btn {
+  offset: none;
+  border: none;
+  color: black;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  margin-left: 50%;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+  position: relative;
+}
+.load-more-btn::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  width: 100%;
+  height: 100%;
+}
+.load-more-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 100%;
+}
+.load-more-btn:hover {
+  background-color: #ec1d24;
+}
+
+.last-chile-hype-box-object {
+  border: none;
+}
+
 /*# sourceMappingURL=style.css.map */

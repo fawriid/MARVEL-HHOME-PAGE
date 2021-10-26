@@ -420,6 +420,10 @@ nav{
         position: relative;
         // opacity: .6;
         transition: transform .4s ease;
+        &:hover{
+            transform: scale(1.01);
+            opacity: .8;
+        }
         // &::after{
         //     content: "";
         //     border: 10px solid black;
@@ -435,10 +439,6 @@ nav{
         //     transform: scale(1.1);
         //     background-color: rgb(90, 9, 9);
         // }
-        &:hover{
-            transform: scale(1.01);
-            opacity: .8;
-        }
     }
 
 }
@@ -460,4 +460,277 @@ nav{
 }
 .third-part-widgets-title{
     margin-top: 1rem;
+}
+
+
+
+
+// news start #####################################
+
+.news-container-container{
+    margin-top: 3rem;
+}
+
+
+
+.news-container{
+    width: 70%;
+    // height: 900px;   
+    // heght will be deleted 
+    margin: 0 auto;
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    
+
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: $redColor;
+        }
+    }
+    span{
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: $grayColor;
+    }
+    
+    
+    .the-latest{
+        font-size: 2.5rem;
+        width: 60%;
+        // background-color: blue;
+        padding: 2rem;
+        position: relative;
+        h1{
+            font-size: 3.4rem;
+        }
+    }
+
+
+
+    .the-hype-box{
+        width: 20%;
+        // background-color: green;
+        padding: 1rem;
+        padding-top: 2rem;
+        position: relative;
+
+    }
+
+    
+
+}
+
+
+
+.the-latest::before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    width: 3px;
+    height: 30px;
+    transform: rotate(45deg);
+    margin-left: 7.5rem;
+    background-color: rosybrown;
+    
+}
+.the-latest::after{
+    content: "";
+    position: absolute;
+    top: 85px;
+    width: 3px;
+    height: 30px;
+    transform: rotate(45deg);
+    margin-left: 2rem;
+    background-color: rosybrown;
+}
+
+
+.hype-box-title-design{
+    .design-div-1{
+        position: absolute;
+        // left: 4.5rem;
+        top: 3.4rem;
+        width: 200px;
+        height: 2px;
+        background-color: rosybrown;
+        // margin-left: 3.5rem;
+    
+    }
+    .design-div-2{
+        position: absolute;
+        top: 4.6rem;
+        left: -2.4rem;
+        width: 40px;
+        height: 3px;
+        background-color: rosybrown;
+        transform: rotate(140deg);
+        // margin-top: 1rem;
+    }
+    .design-div-3{
+        height: 70px;
+        width: 3px;
+        position: absolute;
+        left: -2rem;
+        top: 6rem;
+        // margin-left: .4rem;
+        // margin-top: 1rem;
+        background-color: rosybrown;
+    }
+}
+
+.hype-box-title-design-end{
+    position: relative;
+    
+    .design-div-1{
+        position: absolute;
+        left: 6.5rem;
+        bottom: 3.4rem;
+        width: 200px;
+        height: 2px;
+        background-color: rosybrown;
+        // margin-left: 3.5rem;
+    
+    }
+    .design-div-2{
+        position: absolute;
+        bottom: 4.6rem;
+        right: -2.4rem;
+        width: 40px;
+        height: 3px;
+        background-color: rosybrown;
+        transform: rotate(140deg);
+        // margin-top: 1rem;
+    }
+    .design-div-3{
+        height: 70px;
+        width: 2px;
+        position: absolute;
+        right: -2rem;
+        bottom: 6rem;
+        // margin-left: .4rem;
+        // margin-top: 1rem;
+        background-color: rosybrown;
+    }
+}
+
+
+.the-hype-box-title{
+    padding-top: 2rem;
+    // padding-left: 3rem;
+    width: 90%;
+}
+
+.first-latest-object{
+    padding-top: 3rem;
+}
+.the-latest-objects{
+    margin-top: 2rem;
+    border-bottom: 2px solid $borderColor;
+    padding-bottom: 1rem;
+    display: flex;
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 2.2rem;
+
+    }
+    img{
+        width: 100%;
+        min-width: 280px;
+        background-position: center;
+        background-size: cover;
+        &:hover{
+            transform: scale(1.01);
+            opacity: .8;
+        }
+    }
+    .news-hype-object-img{
+        width: 50%;
+        overflow: hidden;
+        height: 300px;
+    }
+}
+// .second-news-hype-object-img{
+//     height: 200px;
+// }
+
+.first-hype-box-object{
+    padding-top: 3rem;
+}
+.the-hype-box-objects{
+    margin-top: 2rem;
+    border-bottom: 2px solid $borderColor;
+    padding-bottom: 1rem;
+    display: flex;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 2rem;
+        a{
+            margin-top: 1rem;
+        }
+    }
+    img{
+        width: 100%;
+        min-width: 100px;
+        &:hover{
+            transform: scale(1.01);
+            opacity: .8;
+        }
+    }
+    .news-hype-object-img{
+        width: 30%;
+        overflow: hidden;
+        height: 200px;
+    }
+    
+}
+
+.load-more-btn{
+    offset: none;
+    border: none;
+    color: $balck;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .1s ease;
+    margin-left: 50%;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        border-right: 2px solid $balck;
+        border-top: 2px solid $balck ;
+        width: 100%;
+        height: 100%;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        border-left: 2px solid $balck;
+        border-bottom: 2px solid $balck ;
+        width: 100%;
+        height: 100%;
+    }
+    &:hover{
+        background-color: $redColor;
+    }
+}
+.last-chile-hype-box-object{
+    border: none;
 }
