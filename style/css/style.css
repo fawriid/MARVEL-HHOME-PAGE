@@ -557,6 +557,9 @@ nav {
   overflow: hidden;
   height: 300px;
 }
+.the-latest-objects span {
+  margin: 1rem 0;
+}
 
 .first-hype-box-object {
   padding-top: 3rem;
