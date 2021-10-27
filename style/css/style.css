@@ -547,6 +547,7 @@ nav {
   min-width: 280px;
   background-position: center;
   background-size: cover;
+  transition: 0.1s ease-in;
 }
 .the-latest-objects img:hover {
   transform: scale(1.01);
@@ -583,6 +584,7 @@ nav {
 .the-hype-box-objects img {
   width: 100%;
   min-width: 100px;
+  transition: 0.1s ease-in;
 }
 .the-hype-box-objects img:hover {
   transform: scale(1.01);
@@ -636,6 +638,176 @@ nav {
 
 .last-chile-hype-box-object {
   border: none;
+}
+
+.top-layer-footer {
+  color: #fff;
+  background-color: black;
+  padding: 10rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.top-layer-footer h3 {
+  color: #ec1d24;
+  letter-spacing: 0.8rem;
+}
+.top-layer-footer h4 {
+  letter-spacing: 0.2rem;
+}
+.top-layer-footer p {
+  margin-top: 10rem;
+  font-size: 1.5rem;
+}
+.top-layer-footer h1 {
+  letter-spacing: 0.1rem;
+}
+.top-layer-footer button {
+  border: none;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: #fff;
+  background-color: #ec1d24;
+  cursor: pointer;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in;
+}
+.top-layer-footer button:hover {
+  transform: scale(1.03);
+  color: #ec1d24;
+  background-color: #fff;
+}
+
+footer {
+  margin-top: 0;
+  background-color: #151515;
+  font-size: 2rem;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: #999999;
+}
+footer .footer-70-container {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 4.5rem;
+  padding-bottom: 4rem;
+}
+footer .all-footer-nav-parts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .all-footer-nav-parts > div {
+  display: flex;
+}
+footer .all-footer-nav-parts .logo-and-first-links-container {
+  width: 23%;
+}
+footer .all-footer-nav-parts .logo-and-first-links-container h1 {
+  position: relative;
+  top: 2rem;
+  font-size: 10rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  background-color: #ec1d24;
+  padding: 0 0.6rem;
+}
+footer .all-footer-nav-parts .logo-and-first-links-container h1:hover {
+  color: white;
+}
+footer .all-footer-nav-parts .logo-and-first-links-container li {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+footer .all-footer-nav-parts .second-footer-part {
+  width: 23%;
+}
+footer .all-footer-nav-parts .second-footer-part li {
+  margin: 1rem 0;
+}
+footer .all-footer-nav-parts .second-footer-part a {
+  font-size: 1.9rem;
+  font-weight: lighter;
+}
+footer .all-footer-nav-parts .marvel-insider-and-unlimited {
+  width: 23%;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+footer .all-footer-nav-parts .marvel-insider-and-unlimited img {
+  width: 4rem;
+  margin-right: 1rem;
+}
+footer .all-footer-nav-parts .marvel-insider-and-unlimited .marvel-insider-and-unlimited-inside-container {
+  display: flex;
+}
+footer .all-footer-nav-parts .marvel-insider-and-unlimited a {
+  margin: 1rem 0;
+}
+footer .all-footer-nav-parts .marvel-insider-and-unlimited h4 {
+  font-size: 1.9rem;
+  letter-spacing: 0.2rem;
+  margin: 0.5rem 0;
+}
+footer .all-footer-nav-parts .marvel-insider-and-unlimited p {
+  margin: 0;
+  color: #999999;
+  font-size: 1.6rem;
+}
+footer .all-footer-nav-parts .social-media-part {
+  width: 23%;
+  text-align: center;
+  flex-direction: column;
+}
+footer .all-footer-nav-parts .social-media-part h3 {
+  color: #999999;
+}
+footer .all-footer-nav-parts .social-media-part div {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 70%;
+  padding-left: 6.5rem;
+  padding-bottom: 3rem;
+}
+footer .all-footer-nav-parts .social-media-part .socialmedia-svg-footer {
+  font-size: 3rem;
+  margin: 0.5rem 1rem;
+}
+footer .all-footer-nav-parts .social-media-part .socialmedia-svg-footer:hover path {
+  fill: white;
+  transform: scale(1.2);
+}
+footer .all-footer-nav-parts .social-media-part .socialmedia-svg-footer path {
+  transition: 0.1s ease-in;
+  fill: #999999;
+}
+footer .policies-footer {
+  margin-top: 3rem;
+}
+footer .policies-footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .policies-footer li {
+  padding: 1rem;
+  margin: 0 1.5rem;
+}
+footer .policies-footer a {
+  font-size: 1.5rem;
+  color: #999999;
+}
+footer .policies-footer a:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

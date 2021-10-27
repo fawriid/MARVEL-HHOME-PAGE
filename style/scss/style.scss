@@ -643,6 +643,7 @@ nav{
         min-width: 280px;
         background-position: center;
         background-size: cover;
+        transition: .1s ease-in;
         &:hover{
             transform: scale(1.01);
             opacity: .8;
@@ -682,6 +683,7 @@ nav{
     img{
         width: 100%;
         min-width: 100px;
+        transition: .1s ease-in;
         &:hover{
             transform: scale(1.01);
             opacity: .8;
@@ -737,3 +739,193 @@ nav{
 .last-chile-hype-box-object{
     border: none;
 }
+
+
+// main end 
+
+
+// footer and top layer start 
+
+.top-layer-footer{
+    color: $white;
+    background-color: black;
+    padding: 10rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    h3{
+        color: $redColor;
+        letter-spacing: .8rem;
+    }
+    h4{
+        letter-spacing: .2rem;
+    }
+    p{
+        margin-top: 10rem;
+        font-size: 1.5rem;
+    }
+    h1{
+        letter-spacing: .1rem;
+    }
+    button{
+        border: none;
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        color: $white;
+        background-color: $redColor;
+        cursor: pointer;
+        padding:1.5rem ;
+        border-radius: .5rem;
+        transition: .2s ease-in;
+        &:hover{
+            transform: scale(1.03);
+            color: $redColor;
+            background-color: $white;
+        }
+    }
+}
+
+
+
+
+// footer nav 
+
+
+footer{
+    margin-top: 0;
+    background-color: #151515;
+    font-size: 2rem;
+    ul{
+        list-style: none;
+    }
+    a{
+        color: white;
+        &:hover{
+            color: $grayColor;
+        }
+    }
+    .footer-70-container{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 4.5rem;
+        padding-bottom: 4rem;
+    }
+    .all-footer-nav-parts{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > div{
+            display: flex;
+        }
+        .logo-and-first-links-container{
+            width: 23%;
+            h1{
+                position: relative;
+                top: 2rem;
+                font-size: 10rem;
+                margin-top: .5rem;
+                margin-bottom: 0;
+                background-color: $redColor;
+                padding:0 .6rem ;
+                &:hover{
+                    color: white;
+                }
+    
+            }
+            li{
+                margin: 1rem 0;
+                font-weight: bold;
+            }
+        }
+        .second-footer-part{
+            width: 23%;
+            li{
+                margin: 1rem 0;
+            }
+            a{
+                font-size: 1.9rem;
+                font-weight: lighter;
+            }
+        }
+        .marvel-insider-and-unlimited{
+            width: 23%;
+            flex-direction: column;
+            padding-bottom: 2rem;
+            img{
+                width: 4rem;
+                margin-right: 1rem;
+                // padding:2rem ;
+                // padding-bottom: 3rem;
+            }
+            .marvel-insider-and-unlimited-inside-container{
+                display: flex;
+
+            }
+            a{
+                margin: 1rem 0;
+                
+            }
+            h4{
+                font-size: 1.9rem;
+                letter-spacing: .2rem;
+                margin:.5rem 0;
+            }
+            p{
+                margin: 0;
+                color: $grayColor;
+                font-size: 1.6rem;
+            }
+        }
+        .social-media-part{
+            width: 23%;
+            text-align: center;
+            flex-direction: column;
+            h3{
+                color: $grayColor;
+            }
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                width: 70%;
+                padding-left: 6.5rem;
+                padding-bottom: 3rem;
+            }
+            .socialmedia-svg-footer{
+                font-size: 3rem;
+                margin: .5rem 1rem;
+                &:hover path{
+                    fill: white;
+                    transform: scale(1.2);
+                }
+            }
+            .socialmedia-svg-footer path{
+                transition: .1s ease-in;
+                fill: $grayColor;
+            }
+        }
+    }
+
+    .policies-footer{
+        margin-top: 3rem;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        li{
+            padding: 1rem;
+            margin: 0 1.5rem;
+        }
+        a{
+            font-size: 1.5rem;
+            color: $grayColor;
+            &:hover{
+                color: white;
+            }
+            
+        }
+    }
+}
+// footer end 
