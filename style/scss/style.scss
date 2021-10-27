@@ -133,6 +133,7 @@ nav{
     font-family: 'roboto' , sans-serif;
     font-size: 6rem;
     width: auto;
+   
 }
 .third-layer-nav{
     @include flex (center,center);
@@ -929,3 +930,8 @@ footer{
     }
 }
 // footer end 
+
+
+
+
+// responsive 

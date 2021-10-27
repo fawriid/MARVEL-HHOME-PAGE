@@ -8,3 +8,9 @@
     border-bottom:1px solid rgba(256, 256, 256, 0.2)  ;
     border-left:1px solid rgba(256, 256, 256, 0.2)  ;
 }
+
+@mixin query ($minwidth, $maxwidth){
+    @media (min-width:$minwidth) and (max-width:$maxwidth) {
+        @content;
+    }
+}
