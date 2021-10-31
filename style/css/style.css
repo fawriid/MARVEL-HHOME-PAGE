@@ -222,6 +222,7 @@ nav {
   margin: 0 auto;
   background-color: #e6ececc9;
   text-align: center;
+  overflow: hidden;
 }
 .google-ads p {
   padding-top: 2rem;
@@ -598,6 +599,12 @@ nav {
   height: 200px;
 }
 
+.load-more-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .load-more-btn {
   offset: none;
   border: none;
@@ -608,7 +615,6 @@ nav {
   background-color: transparent;
   cursor: pointer;
   transition: all 0.1s ease;
-  margin-left: 50%;
   margin-top: 2rem;
   margin-bottom: 6rem;
   text-align: center;
@@ -681,6 +687,13 @@ nav {
   background-color: #fff;
 }
 
+.logo-and-links-third span {
+  color: #b8b7b7;
+}
+.logo-and-links-third h2 {
+  color: #8a8585;
+}
+
 footer {
   margin-top: 0;
   background-color: #151515;
@@ -722,6 +735,19 @@ footer .all-footer-nav-parts .logo-and-first-links-container h1 {
   padding: 0 0.6rem;
 }
 footer .all-footer-nav-parts .logo-and-first-links-container h1:hover {
+  color: white;
+}
+footer .all-footer-nav-parts .logo-and-first-links-container .footer-logo-res h1 {
+  position: relative;
+  top: 2rem;
+  font-size: 10rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  background-color: #ec1d24;
+  padding: 0 0.6rem;
+  display: none;
+}
+footer .all-footer-nav-parts .logo-and-first-links-container .footer-logo-res h1:hover {
   color: white;
 }
 footer .all-footer-nav-parts .logo-and-first-links-container li {
@@ -812,25 +838,286 @@ footer .policies-footer a:hover {
   color: white;
 }
 
+@media (max-width: 480px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .news-container .the-latest {
+    width: 90%;
+  }
+  .news-container .the-hype-box {
+    width: 60%;
+  }
+
+  .second-part-widget-container, .third-part-widget-container {
+    overflow: scroll;
+    padding-left: 7rem;
+  }
+
+  .second-part-img-container img, .third-part-img-container img {
+    display: none;
+  }
+  .second-part-img-container .logo-and-links, .second-part-img-container .logo-and-links-third, .third-part-img-container .logo-and-links, .third-part-img-container .logo-and-links-third {
+    width: 100%;
+    text-align: center;
+    top: 50;
+    left: 0;
+  }
+
+  footer .footer-70-container {
+    width: 90%;
+  }
+  footer .all-footer-nav-parts {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .all-footer-nav-parts .logo-and-first-links-container {
+    width: 90%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .logo-and-first-links-container li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .second-footer-part {
+    width: 90%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .second-footer-part li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .marvel-insider-and-unlimited {
+    width: 90%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .marvel-insider-and-unlimited li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .social-media-part {
+    width: 90%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .social-media-part li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts ul {
+    padding: 0;
+  }
+  footer .all-footer-nav-parts .social-media-part div {
+    padding: 0rem;
+    padding-left: 2rem;
+    width: 100%;
+  }
+  footer .all-footer-nav-parts > div {
+    margin: 6rem;
+  }
+  footer .all-footer-nav-parts .footer-logo {
+    display: none;
+  }
+
+  .policies-footer ul {
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 760px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .news-container .the-latest {
+    width: 90%;
+  }
+  .news-container .the-hype-box {
+    width: 60%;
+  }
+
+  .second-part-widget-container, .third-part-widget-container {
+    overflow: scroll;
+    padding-left: 7rem;
+  }
+
+  .second-part-img-container img, .third-part-img-container img {
+    display: none;
+  }
+  .second-part-img-container .logo-and-links, .second-part-img-container .logo-and-links-third, .third-part-img-container .logo-and-links, .third-part-img-container .logo-and-links-third {
+    width: 100%;
+    text-align: center;
+    top: 50;
+    left: 0;
+  }
+
+  .first-main-part ul {
+    margin: 0 auto;
+    width: 90%;
+    height: 11rem;
+    top: -6rem;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .first-main-part .facebook-svg-li {
+    margin-left: 0.5rem;
+  }
+  .first-main-part .socialmedia-svg {
+    margin-left: 0rem;
+  }
+
+  footer .footer-70-container {
+    width: 90%;
+  }
+  footer .all-footer-nav-parts {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .all-footer-nav-parts .logo-and-first-links-container {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .logo-and-first-links-container li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .second-footer-part {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .second-footer-part li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .marvel-insider-and-unlimited {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .marvel-insider-and-unlimited li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .social-media-part {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .social-media-part li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts ul {
+    padding: 0;
+  }
+  footer .all-footer-nav-parts > div {
+    margin: 6rem;
+  }
+  footer .all-footer-nav-parts .footer-logo {
+    display: none;
+  }
+}
+@media (min-width: 761px) and (max-width: 960px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .news-container .the-latest {
+    width: 90%;
+  }
+  .news-container .the-hype-box {
+    width: 60%;
+  }
+
+  .second-part-widget-container, .third-part-widget-container {
+    overflow: scroll;
+    padding-left: 7rem;
+  }
+
+  .second-part-img-container img, .third-part-img-container img {
+    display: none;
+  }
+  .second-part-img-container .logo-and-links, .second-part-img-container .logo-and-links-third, .third-part-img-container .logo-and-links, .third-part-img-container .logo-and-links-third {
+    width: 100%;
+    text-align: center;
+    top: 50;
+    left: 0;
+  }
+
+  .first-main-part ul {
+    overflow-x: scroll;
+    height: 10rem;
+    top: -6rem;
+  }
+
+  footer .footer-70-container {
+    width: 90%;
+  }
+  footer .all-footer-nav-parts {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .all-footer-nav-parts .logo-and-first-links-container {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .logo-and-first-links-container li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .second-footer-part {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .second-footer-part li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .marvel-insider-and-unlimited {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .marvel-insider-and-unlimited li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .social-media-part {
+    width: 30%;
+    justify-content: center;
+  }
+  footer .all-footer-nav-parts .social-media-part li {
+    text-align: center;
+  }
+  footer .all-footer-nav-parts .social-media-part div {
+    padding: 0;
+    padding-left: 3.5rem;
+  }
+  footer .all-footer-nav-parts > div {
+    margin: 6rem;
+  }
+  footer .all-footer-nav-parts .footer-logo {
+    display: none;
+  }
+}
 @media (min-width: 961px) and (max-width: 1280px) {
   .news-container {
     flex-direction: column;
     align-items: center;
     width: 90%;
   }
-
-  .the-latest {
-    background-color: red;
-  }
-
-  .the-hype-box {
+  .news-container .the-latest {
     width: 90%;
-    background-color: blue;
+  }
+  .news-container .the-hype-box {
+    width: 60%;
   }
 
   .second-part-widget-container, .third-part-widget-container {
     overflow: scroll;
     padding-left: 7rem;
+  }
+
+  .second-part-img-container button, .third-part-img-container button {
+    margin: 2rem;
+  }
+
+  .first-main-part ul {
+    overflow-x: scroll;
+  }
+
+  footer .footer-70-container {
+    width: 90%;
   }
 }
 
