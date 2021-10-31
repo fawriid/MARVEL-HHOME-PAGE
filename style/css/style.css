@@ -32,7 +32,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50.5%;
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
 }
@@ -178,7 +178,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.7rem;
   position: relative;
   top: -3.3rem;
   overflow: hidden;
@@ -267,9 +267,10 @@ nav {
 
 .second-part-img-container, .third-part-img-container {
   width: 100%;
+  margin: 0 auto;
   height: 680px;
   background-color: #151515;
-  overflow: hidden;
+  overflow: scroll;
 }
 .second-part-img-container > img, .third-part-img-container > img {
   width: 70%;
@@ -443,12 +444,13 @@ nav {
   padding: 1rem;
   padding-top: 2rem;
   position: relative;
+  font-size: 2rem;
 }
 
 .the-latest::before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 5px;
   width: 3px;
   height: 30px;
   transform: rotate(45deg);
@@ -459,7 +461,7 @@ nav {
 .the-latest::after {
   content: "";
   position: absolute;
-  top: 85px;
+  top: 65px;
   width: 3px;
   height: 30px;
   transform: rotate(45deg);
@@ -545,8 +547,8 @@ nav {
 .the-latest-objects img {
   width: 100%;
   min-width: 280px;
-  background-position: center;
-  background-size: cover;
+  background-position: right;
+  background-size: contain;
   transition: 0.1s ease-in;
 }
 .the-latest-objects img:hover {
@@ -808,6 +810,28 @@ footer .policies-footer a {
 }
 footer .policies-footer a:hover {
   color: white;
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .the-latest {
+    background-color: red;
+  }
+
+  .the-hype-box {
+    width: 90%;
+    background-color: blue;
+  }
+
+  .second-part-widget-container, .third-part-widget-container {
+    overflow: scroll;
+    padding-left: 7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
