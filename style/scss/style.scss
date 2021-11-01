@@ -1256,6 +1256,11 @@ footer{
     } .top-sign{
         left: 0;
     }
+    .third-layer-nav{
+        img{
+            display: none;
+        }
+    }
    
 }
 
@@ -1360,7 +1365,24 @@ footer{
         display: inline-block;
         padding-left: .5rem;
     }
+    nav{
+        ul{
+            padding-left: 0;
+        }
+    }
+    .third-layer-nav{
+        img{
+            display: none;
+        }
+    }
+    .top-marvel-umlimited{
+        img{
+            display: none;
+        }
+    }
 }
+
+
 
 
 
@@ -1399,6 +1421,16 @@ footer{
             width: 90%;
         }
 
+    }
+    .third-layer-nav{
+        img{
+            display: none;
+        }
+    }
+    .top-marvel-umlimited{
+        img{
+            display: none;
+        }
     }
 
 }

@@ -1120,6 +1120,10 @@ footer .policies-footer a:hover {
   .top-sign {
     left: 0;
   }
+
+  .third-layer-nav img {
+    display: none;
+  }
 }
 @media (min-width: 761px) and (max-width: 960px) {
   .news-container {
@@ -1209,6 +1213,18 @@ footer .policies-footer a:hover {
     display: inline-block;
     padding-left: 0.5rem;
   }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  .third-layer-nav img {
+    display: none;
+  }
+
+  .top-marvel-umlimited img {
+    display: none;
+  }
 }
 @media (min-width: 961px) and (max-width: 1280px) {
   .news-container {
@@ -1238,6 +1254,14 @@ footer .policies-footer a:hover {
 
   footer .footer-70-container {
     width: 90%;
+  }
+
+  .third-layer-nav img {
+    display: none;
+  }
+
+  .top-marvel-umlimited img {
+    display: none;
   }
 }
 
