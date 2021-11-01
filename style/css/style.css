@@ -31,6 +31,10 @@
   align-items: center;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 html {
   font-size: 50.5%;
   font-family: "roboto", sans-serif;
@@ -64,7 +68,12 @@ a {
   background-color: #202020;
   height: 6.5rem;
   overflow: hidden;
+  justify-content: space-around;
   padding-left: 16rem;
+}
+.header-div .top-sign {
+  position: relative;
+  right: 15rem;
 }
 .header-div a:hover {
   color: #ec1d24;
@@ -136,6 +145,18 @@ nav a {
   font-family: "roboto", sans-serif;
   font-size: 6rem;
   width: auto;
+}
+
+.main-big-logo-res {
+  background-color: #ec1d24;
+  font-size: 4rem;
+  letter-spacing: -4px;
+  padding: 1rem;
+  font-weight: 900;
+  font-family: "roboto", sans-serif;
+  font-size: 6rem;
+  width: auto;
+  display: none;
 }
 
 .third-layer-nav {
@@ -920,6 +941,53 @@ footer .policies-footer a:hover {
   .policies-footer ul {
     flex-direction: column;
   }
+
+  .main-big-logo {
+    display: none;
+  }
+
+  .main-big-logo-res {
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+
+  .top-marvel-umlimited {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    padding: 1rem;
+    display: block;
+    font-size: 4rem;
+    position: relative;
+    top: 0.5rem;
+    border-right: 2px solid #393939;
+  }
+
+  .svg-icon-a {
+    border-left: 2px solid #393939;
+  }
+
+  .header-div {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .third-layer-nav {
+    padding-left: 4rem;
+    font-size: 1.4rem;
+  }
+  .third-layer-nav img {
+    display: none;
+  }
+
+  .top-sign {
+    left: 0;
+  }
 }
 @media (min-width: 481px) and (max-width: 760px) {
   .news-container {
@@ -1009,6 +1077,49 @@ footer .policies-footer a:hover {
   footer .all-footer-nav-parts .footer-logo {
     display: none;
   }
+
+  .main-big-logo {
+    display: none;
+  }
+
+  .main-big-logo-res {
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+
+  .top-marvel-umlimited {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    padding: 1rem;
+    display: block;
+    font-size: 4rem;
+    position: relative;
+    top: 0.5rem;
+    border-right: 2px solid #393939;
+  }
+
+  .svg-icon-a {
+    border-left: 2px solid #393939;
+  }
+
+  .header-div {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .third-layer-nav {
+    padding-left: 4rem;
+  }
+
+  .top-sign {
+    left: 0;
+  }
 }
 @media (min-width: 761px) and (max-width: 960px) {
   .news-container {
@@ -1088,6 +1199,15 @@ footer .policies-footer a:hover {
   }
   footer .all-footer-nav-parts .footer-logo {
     display: none;
+  }
+
+  .main-big-logo {
+    display: none;
+  }
+
+  .main-big-logo-res {
+    display: inline-block;
+    padding-left: 0.5rem;
   }
 }
 @media (min-width: 961px) and (max-width: 1280px) {

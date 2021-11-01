@@ -32,6 +32,9 @@
     // padding-right: 1rem;
     @include flex (center,center)
 }
+.hamburger-menu{
+    display: none;
+}
 html{
     font-size: 50.5%;
     font-family: 'roboto' , sans-serif;
@@ -61,7 +64,12 @@ a{
     background-color: $structurColor;
     height: 6.5rem;
     overflow: hidden;
+    justify-content: space-around;
     padding-left: 16rem;
+    .top-sign{
+        position: relative;
+        right: 15rem;
+    }
     a{
         &:hover{
             color: $redColor;
@@ -135,6 +143,18 @@ nav{
     width: auto;
    
 }
+.main-big-logo-res{
+    background-color: $redColor;
+    font-size: 4rem;
+    letter-spacing: -4px;
+    padding: 1rem;
+    font-weight: 900;
+    font-family: 'roboto' , sans-serif;
+    font-size: 6rem;
+    width: auto;
+    display: none
+}
+
 .third-layer-nav{
     @include flex (center,center);
     color: $white;
@@ -1057,7 +1077,49 @@ footer{
             flex-direction: column;
         }
     }
+    .main-big-logo{
+        display: none;
+    }
+    .main-big-logo-res{
+        display: inline-block;
+        padding-left: .5rem;
+    }
+    .top-marvel-umlimited{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger-menu{
+        padding: 1rem;
+        display: block;
+        font-size: 4rem;
+        position: relative;
+        top: .5rem;
+        // left: .7rem;
+        border-right: 2px solid $borderColor;
+    }
+    .svg-icon-a{
+        border-left: 2px solid $borderColor;
+    }
+    .header-div{
+        justify-content: space-between;
+        padding: 0;
+    }
+    .third-layer-nav{
+        padding-left: 4rem;
+        font-size: 1.4rem;
+        img{
+            display: none;
+        }
+    }
+    .top-sign{
+        left: 0;
+
+    }
+
 }
+
 
 
 
@@ -1160,7 +1222,43 @@ footer{
         }
 
     }
+    .main-big-logo{
+        display: none;
+    }
+    .main-big-logo-res{
+        display: inline-block;
+        padding-left: .5rem;
+    }
+    .top-marvel-umlimited{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .hamburger-menu{
+        padding: 1rem;
+        display: block;
+        font-size: 4rem;
+        position: relative;
+        top: .5rem;
+        // left: .7rem;
+        border-right: 2px solid $borderColor;
+    }
+    .svg-icon-a{
+        border-left: 2px solid $borderColor;
+    }
+    .header-div{
+        justify-content: space-between;
+        padding: 0;
+    }
+    .third-layer-nav{
+        padding-left: 4rem;
+    } .top-sign{
+        left: 0;
+    }
+   
 }
+
 
 
 
@@ -1254,6 +1352,13 @@ footer{
         }
         
         
+    }
+    .main-big-logo{
+        display: none;
+    }
+    .main-big-logo-res{
+        display: inline-block;
+        padding-left: .5rem;
     }
 }
 
