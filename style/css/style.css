@@ -292,7 +292,7 @@ nav {
   margin: 0 auto;
   height: 680px;
   background-color: #151515;
-  overflow: scroll;
+  overflow: hidden;
 }
 .second-part-img-container > img, .third-part-img-container > img {
   width: 70%;

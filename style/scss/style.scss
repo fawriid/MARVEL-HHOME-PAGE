@@ -301,7 +301,7 @@ nav{
     margin: 0 auto;
     height: 680px;
     background-color: #151515;
-    overflow: scroll;
+    overflow: hidden;
     // &::before{
         
     //     border-bottom: 680px solid #151515;
@@ -321,6 +321,8 @@ nav{
         height: 680px;
         position: relative;
         left: 300px;
+        // right: 0rem;
+        // z-index: -1;
         transform: skew(-3deg);
     }
     .marvel-logo{
