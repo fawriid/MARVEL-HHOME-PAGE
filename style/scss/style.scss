@@ -24,7 +24,7 @@
 }
 .svg-icon-a{
     
-    font-size: 3rem;
+    font-size: 3.5rem;
     // margin-left: 1rem;
     border-right: 1px solid $borderColor;
     height: 7rem;
@@ -34,6 +34,9 @@
 }
 .hamburger-menu{
     display: none;
+    &:hover path{
+       fill: $redColor;
+    }
 }
 html{
     font-size: 50.5%;
