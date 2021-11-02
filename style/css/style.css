@@ -419,6 +419,14 @@ nav {
   opacity: 0.8;
 }
 
+.third-part-widget-container {
+  flex-wrap: wrap;
+}
+
+.third-part-widgets-container {
+  max-width: 200px;
+}
+
 .third-part-main {
   margin-top: 11rem;
 }
@@ -892,17 +900,33 @@ footer .policies-footer a:hover {
 
   .second-part-widget-container, .third-part-widget-container {
     overflow: scroll;
-    padding-left: 7rem;
+    flex-wrap: wrap;
+  }
+  .second-part-widget-container img, .third-part-widget-container img {
+    min-width: 150px;
+  }
+  .second-part-widget-container .second-part-widgets-conatiner, .second-part-widget-container .third-part-widgets-container, .third-part-widget-container .second-part-widgets-conatiner, .third-part-widget-container .third-part-widgets-container {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 300px;
   }
 
   .second-part-img-container img, .third-part-img-container img {
     display: none;
   }
   .second-part-img-container .logo-and-links, .second-part-img-container .logo-and-links-third, .third-part-img-container .logo-and-links, .third-part-img-container .logo-and-links-third {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     top: 50;
     left: 0;
+    padding: 3rem;
+  }
+  .second-part-img-container .logo-and-links p, .second-part-img-container .logo-and-links-third p, .third-part-img-container .logo-and-links p, .third-part-img-container .logo-and-links-third p {
+    font-size: 1.7rem;
+  }
+  .second-part-img-container .logo-and-links button, .second-part-img-container .logo-and-links-third button, .third-part-img-container .logo-and-links button, .third-part-img-container .logo-and-links-third button {
+    font-size: 1.7rem;
   }
 
   footer .footer-70-container {
@@ -1029,7 +1053,15 @@ footer .policies-footer a:hover {
 
   .second-part-widget-container, .third-part-widget-container {
     overflow: scroll;
-    padding-left: 7rem;
+    flex-wrap: wrap;
+  }
+  .second-part-widget-container img, .third-part-widget-container img {
+    min-width: 150px;
+  }
+  .second-part-widget-container .second-part-widgets-conatiner, .second-part-widget-container .third-part-widgets-container, .third-part-widget-container .second-part-widgets-conatiner, .third-part-widget-container .third-part-widgets-container {
+    font-size: 1.8rem;
+    width: 100%;
+    max-width: 160px;
   }
 
   .second-part-img-container img, .third-part-img-container img {
@@ -1176,7 +1208,15 @@ footer .policies-footer a:hover {
 
   .second-part-widget-container, .third-part-widget-container {
     overflow: scroll;
-    padding-left: 7rem;
+    flex-wrap: wrap;
+  }
+  .second-part-widget-container img, .third-part-widget-container img {
+    min-width: 150px;
+  }
+  .second-part-widget-container .second-part-widgets-conatiner, .second-part-widget-container .third-part-widgets-container, .third-part-widget-container .second-part-widgets-conatiner, .third-part-widget-container .third-part-widgets-container {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 270px;
   }
 
   .second-part-img-container img, .third-part-img-container img {
@@ -1277,7 +1317,15 @@ footer .policies-footer a:hover {
 
   .second-part-widget-container, .third-part-widget-container {
     overflow: scroll;
-    padding-left: 7rem;
+    flex-wrap: wrap;
+  }
+  .second-part-widget-container img, .third-part-widget-container img {
+    min-width: 150px;
+  }
+  .second-part-widget-container .second-part-widgets-conatiner, .second-part-widget-container .third-part-widgets-container, .third-part-widget-container .second-part-widgets-conatiner, .third-part-widget-container .third-part-widgets-container {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 300px;
   }
 
   .second-part-img-container button, .third-part-img-container button {
