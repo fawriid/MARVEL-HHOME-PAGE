@@ -202,7 +202,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   position: relative;
   top: -3.3rem;
   overflow: hidden;
@@ -237,7 +237,7 @@ nav {
   fill: black;
 }
 .first-main-part .facebook-svg-li {
-  margin-left: 6rem;
+  margin-left: 2rem;
 }
 
 .google-ads {
@@ -863,6 +863,21 @@ footer .policies-footer a:hover {
 }
 
 @media (max-width: 480px) {
+  .first-main-part ul {
+    overflow: auto;
+    height: 10rem;
+    padding-top: 0;
+    font-size: 1.1rem;
+    top: -4rem;
+  }
+  .first-main-part li {
+    padding-top: 1rem;
+  }
+  .first-main-part .socialmedia-svg {
+    padding: 0;
+    margin-left: -2.4rem;
+  }
+
   .news-container {
     flex-direction: column;
     align-items: center;
@@ -969,15 +984,22 @@ footer .policies-footer a:hover {
     position: relative;
     top: 0.5rem;
     border-right: 2px solid #393939;
+    border: none;
   }
 
   .svg-icon-a {
     border-left: 2px solid #393939;
+    border: none;
   }
 
   .header-div {
     justify-content: space-between;
     padding: 0;
+  }
+
+  .top-sign {
+    border: none;
+    font-size: 1.7rem;
   }
 
   .third-layer-nav {
@@ -1028,12 +1050,17 @@ footer .policies-footer a:hover {
     text-align: center;
     padding-right: 1rem;
     padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+  .first-main-part li {
+    margin: 1rem;
   }
   .first-main-part .facebook-svg-li {
-    margin-left: 0.5rem;
+    margin-left: 2.5rem;
   }
   .first-main-part .socialmedia-svg {
-    margin-left: 0rem;
+    margin-left: -2rem;
+    padding: 1rem;
   }
 
   footer .footer-70-container {
@@ -1105,15 +1132,21 @@ footer .policies-footer a:hover {
     position: relative;
     top: 0.5rem;
     border-right: 2px solid #393939;
+    border: none;
   }
 
   .svg-icon-a {
     border-left: 2px solid #393939;
+    border: none;
   }
 
   .header-div {
     justify-content: space-between;
     padding: 0;
+  }
+
+  .top-sign {
+    border: none;
   }
 
   .third-layer-nav {

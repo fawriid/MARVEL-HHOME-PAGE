@@ -198,7 +198,7 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         position: relative;
         top: -3.3rem;
         overflow: hidden;
@@ -238,7 +238,7 @@ nav{
     }
     
     .facebook-svg-li{
-        margin-left: 6rem;
+        margin-left: 2rem;
     }
 
 }
@@ -996,6 +996,25 @@ footer{
 
 // phone screen 
 @media (max-width:480px) {
+    .first-main-part{
+        ul{
+            // display: none;
+            overflow: auto;
+            height: 10rem;
+            padding-top: 0;
+            font-size: 1.1rem;
+            top: -4rem;
+        }
+        li{
+            padding-top: 1rem;
+        }
+        .socialmedia-svg{
+            padding: 0;
+            margin-left: -2.4rem;
+        }
+    }
+
+
     .news-container{
         flex-direction: column;
         align-items: center;
@@ -1103,13 +1122,19 @@ footer{
         top: .5rem;
         // left: .7rem;
         border-right: 2px solid $borderColor;
+        border: none;
     }
     .svg-icon-a{
         border-left: 2px solid $borderColor;
+        border: none;
     }
     .header-div{
         justify-content: space-between;
         padding: 0;
+    }
+    .top-sign{
+        border: none;
+        font-size:1.7rem ;
     }
     .third-layer-nav{
         padding-left: 4rem;
@@ -1124,6 +1149,11 @@ footer{
     }
 
 }
+
+
+
+
+
 
 
 
@@ -1169,12 +1199,18 @@ footer{
             text-align: center;
             padding-right: 1rem;
             padding-left: 1rem;
+            font-size: 1.5rem;
+            
+        }
+        li{
+            margin: 1rem;
         }
         .facebook-svg-li{
-            margin-left: .5rem;
+            margin-left: 2.5rem;
         }
         .socialmedia-svg{
-            margin-left: 0rem;
+            margin-left: -2rem;
+            padding: 1rem;
         }
     }
     footer{
@@ -1248,13 +1284,18 @@ footer{
         top: .5rem;
         // left: .7rem;
         border-right: 2px solid $borderColor;
+        border: none;
     }
     .svg-icon-a{
         border-left: 2px solid $borderColor;
+        border: none;
     }
     .header-div{
         justify-content: space-between;
         padding: 0;
+    }
+    .top-sign{
+        border: none;
     }
     .third-layer-nav{
         padding-left: 4rem;
