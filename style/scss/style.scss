@@ -2,1537 +2,1459 @@
 @import "variable.scss";
 
 .svg-icon {
-    width: 1em;
-    height: 1em;
+  width: 1em;
+  height: 1em;
 }
-  
-  .svg-icon path,
-  .svg-icon polygon,
-  .svg-icon rect {
-    fill: #f5f5f5;
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #f5f5f5;
 }
-  
-  .svg-icon circle {
-    stroke: #0cf2fa;
-    stroke-width: 1;
+
+.svg-icon circle {
+  stroke: #0cf2fa;
+  stroke-width: 1;
 }
-.svg-icon-search{
-    transform:rotate(-70deg);
-    &:hover path{
-        fill: $redColor;
+.svg-icon-search {
+  transform: rotate(-70deg);
+  &:hover path {
+    fill: $redColor;
+  }
+}
+.svg-icon-a {
+  font-size: 3.5rem;
+  // margin-left: 1rem;
+  border-right: 1px solid $borderColor;
+  height: 7rem;
+  padding: 1rem;
+  // padding-right: 1rem;
+  @include flex(center, center);
+}
+.hamburger-menu {
+  display: none;
+  &:hover path {
+    fill: $redColor;
+  }
+}
+html {
+  font-size: 55.5%;
+  font-family: "roboto", sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.7rem;
+}
+.header-div,
+.flex {
+  @include flex(space-around, center);
+  a {
+    color: $white;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 30px;
+}
+.header-div {
+  background-color: $structurColor;
+  height: 6.5rem;
+  overflow: hidden;
+  justify-content: space-around;
+  padding-left: 16rem;
+  .top-sign {
+    position: relative;
+    right: 15rem;
+  }
+  a {
+    &:hover {
+      color: $redColor;
     }
+  }
+  #marvel-logo-top {
+    &:hover {
+      background-color: $white;
+    }
+  }
 }
-.svg-icon-a{
-    
-    font-size: 3.5rem;
-    // margin-left: 1rem;
-    border-right: 1px solid $borderColor;
-    height: 7rem;
+nav {
+  border-top: 1px solid $borderColor;
+  height: 5rem;
+  background-color: $structurColor;
+  overflow: hidden;
+  @include flex(center, center);
+  ul {
+    @include flex(center, center);
+  }
+  li {
+    list-style-type: none;
     padding: 1rem;
-    // padding-right: 1rem;
-    @include flex (center,center)
-}
-.hamburger-menu{
-    display: none;
-    &:hover path{
-       fill: $redColor;
-    }
-}
-html{
-    font-size: 55.5%;
-    font-family: 'roboto' , sans-serif;
-    // font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-}
-body{
-    margin: 0;
-    padding: 0;
+    margin: 0 1rem;
+    font-weight: 500;
     font-size: 1.7rem;
-}
-.header-div, .flex{
-    @include flex (space-around, center);
-    a{
-        color:$white;
-    }
-    
-}
-a{
-    text-decoration: none;
+  }
+  a {
+    color: $white;
+  }
 }
 
-.logo-img{
-    width: 30px;
+.nav-item {
+  height: 100%;
 }
-.header-div{
-    background-color: $structurColor;
-    height: 6.5rem;
-    overflow: hidden;
-    justify-content: space-around;
-    padding-left: 16rem;
-    .top-sign{
-        position: relative;
-        right: 15rem;
-    }
-    a{
-        &:hover{
-            color: $redColor;
-        }
-    }
-    #marvel-logo-top{
-        &:hover{
-            background-color: $white;
-        }
-    }
-}
-nav{
-    border-top: 1px solid $borderColor;
-    height: 5rem;
-    background-color: $structurColor;
-    overflow: hidden;
-    @include flex (center, center);
-    ul{
-        @include flex (center, center);
-        
-    }
-    li{
-        list-style-type: none;
-        padding: 1rem;
-        margin: 0 1rem;
-        font-weight: 500;
-        font-size: 1.7rem;
-        
-    }
-    a{
-        color: $white;
-    }
-}
-
-.nav-item{
-    height: 100%;
-}
-.nav-item:hover a{
-    // border-bottom: 2px red solid;
-    color: $beforHover;
-        
+.nav-item:hover a {
+  // border-bottom: 2px red solid;
+  color: $beforHover;
 }
 .nav-item:hover {
-    border-bottom: 2px $redColor solid;
-
+  border-bottom: 2px $redColor solid;
 }
-.marvel-unlimited-nav{
-    font-size: 1.7rem;
-}
-
-.border-white{
-    padding:3rem;
-    border-right:1px solid $borderColor;
-    border-bottom:1px solid $borderColor ;
-    border-left:1px solid $borderColor ;
-    p{
-        margin:0;
-    }
-    h3{
-        margin: 0;
-    }
-}
-.main-big-logo{
-    background-color: $redColor;
-    font-size: 4rem;
-    letter-spacing: -4px;
-    padding: 1rem;
-    font-weight: 900;
-    font-family: 'roboto' , sans-serif;
-    font-size: 6rem;
-    width: auto;
-   
-}
-.main-big-logo-res{
-    background-color: $redColor;
-    font-size: 4rem;
-    letter-spacing: -4px;
-    padding: 1rem;
-    font-weight: 900;
-    font-family: 'roboto' , sans-serif;
-    font-size: 6rem;
-    width: auto;
-    display: none
+.marvel-unlimited-nav {
+  font-size: 1.7rem;
 }
 
-.third-layer-nav{
-    @include flex (center,center);
-    color: $white;
-    background-color: #151515;
-    z-index: 5;
-    position: sticky;
-    top: 1rem;
-
+.border-white {
+  padding: 3rem;
+  border-right: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+  border-left: 1px solid $borderColor;
+  p {
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
 }
-.header-div , nav{
-    position: sticky;
-    top: 0;
-    transition: .9s;
-
+.main-big-logo {
+  background-color: $redColor;
+  font-size: 4rem;
+  letter-spacing: -4px;
+  padding: 1rem;
+  font-weight: 900;
+  font-family: "roboto", sans-serif;
+  font-size: 6rem;
+  width: auto;
 }
-.header-div{
-    z-index: 1;
+.main-big-logo-res {
+  background-color: $redColor;
+  font-size: 4rem;
+  letter-spacing: -4px;
+  padding: 1rem;
+  font-weight: 900;
+  font-family: "roboto", sans-serif;
+  font-size: 6rem;
+  width: auto;
+  display: none;
 }
-nav{
-    z-index: 2;
+
+.third-layer-nav {
+  @include flex(center, center);
+  color: $white;
+  background-color: #151515;
+  z-index: 5;
+  position: sticky;
+  top: 1rem;
+}
+.header-div,
+nav {
+  position: sticky;
+  top: 0;
+  transition: 0.9s;
+}
+.header-div {
+  z-index: 1;
+}
+nav {
+  z-index: 2;
 }
 
-// ########## start main part ############ 
- .first-main-part{
-    img{
-        height: 50vh;
-        width: 100%;
-        transform: skewY(-1deg);
-        position: relative;
-        top: -15px
-    }
-    ul{
-        // @include flex (center, center);
-        background-color:white;
-        list-style-type: none;
-        width: 85%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.9rem;
-        position: relative;
-        top: -3.3rem;
-        overflow: hidden;
-
-        height: 8rem;
-    }
-    li{
-        margin: 0 2rem;
-        padding-top: 2rem;
-    }
-    a{
-        color: $balck;
-        &:hover{
-            color: $redColor;
-        }
-
-    }
-    #GOTG-launch-li{
-
-        border-top: 4px solid $redColor;
-    }
-    #GOTG-launch{
-        color: $redColor;
-    }
-    .socialmedia-svg path,
-    .socialmedia-svg polygon,
-    .socialmedia-svg rect {
-      fill: $beforHover;
-   }
-  
-    .socialmedia-svg{
-        font-size: 2.7rem;
-        margin-left: 1rem;
-     &:hover path{
-        fill: $balck;
-     }   
-    }
-    
-    .facebook-svg-li{
-        margin-left: 2rem;
-    }
-
-}
-.google-ads{
-    width: 50%;
-    height: 280px;
-    margin: 0 auto;
-    background-color: #e6ececc9;
-    text-align: center;
-    overflow: hidden;
-    p{
-        padding-top: 2rem;
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        font-size: 3.5rem;
-        font-weight: 200;
-    }
-    span{
-        font-weight: bold;
-    }
-    .first-google-ads-button{
-        outline: none;
-        border: none;
-        background-color: #4285f5;
-        color: white;
-        width: 200px;
-        // height: 30px;
-        font-size: 2rem;
-        border-radius: 2px;
-        // display: inline-block;
-        padding:1rem ;
-        box-shadow: .5px .5px 3px 0px black;
-        cursor: pointer;
-        &:hover{
-            background-color: #316dd6;
-        }
-    }
-    .second-google-ads-button{
-        outline: none;
-        border: none;
-        color: #a8c7ea;
-        background-color: white;
-        width: 200px;
-        // height: 30px;
-        padding: 1rem;
-        border-radius: 2px;
-        font-size: 2rem; 
-        box-shadow: .5px .5px 3px 0px black;
-        cursor: pointer;
-     &:hover{
-         background-color: rgb(241, 241, 241);
-         color: white;
-     }
-    }
-}
- 
-
-
-// second part img 
-.second-part-img-container,.third-part-img-container{
-    // transform: skewY(-0.3deg);
+// ########## start main part ############
+.first-main-part {
+  img {
+    height: 50vh;
     width: 100%;
+    transform: skewY(-1deg);
+    position: relative;
+    top: -15px;
+  }
+  ul {
+    // @include flex (center, center);
+    background-color: white;
+    list-style-type: none;
+    width: 85%;
     margin: 0 auto;
-    height: 680px;
-    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    position: relative;
+    top: -3.3rem;
     overflow: hidden;
-    // &::before{
-        
-    //     border-bottom: 680px solid #151515;
-    //     border-right: 190px solid transparent;
-    //     content: "";
-    //     height: 0;
-    //     left: 45.99%;
-    //     position: absolute;
-    //     -webkit-transition: .5s ease;
-    //     transition: .5s ease;
-    //     width: 0;
-    //     z-index: 1;
-    //     display: block
-    // }
-     > img{
-        width: 70%;
-        height: 680px;
-        position: relative;
-        left: 300px;
-        // right: 0rem;
-        // z-index: -1;
-        transform: skew(-3deg);
+
+    height: 8rem;
+  }
+  li {
+    margin: 0 2rem;
+    padding-top: 2rem;
+  }
+  a {
+    color: $balck;
+    &:hover {
+      color: $redColor;
     }
-    .marvel-logo{
-        width: 170px;
-        height: 170px;
-        display: inline-block;
-        position:relative;
-        left: -15px;
+  }
+  #GOTG-launch-li {
+    border-top: 4px solid $redColor;
+  }
+  #GOTG-launch {
+    color: $redColor;
+  }
+  .socialmedia-svg path,
+  .socialmedia-svg polygon,
+  .socialmedia-svg rect {
+    fill: $beforHover;
+  }
+
+  .socialmedia-svg {
+    font-size: 2.7rem;
+    margin-left: 1rem;
+    &:hover path {
+      fill: $balck;
     }
-    .logo-and-links,.logo-and-links-third{
+  }
+
+  .facebook-svg-li {
+    margin-left: 2rem;
+  }
+}
+.google-ads {
+  width: 50%;
+  height: 280px;
+  margin: 0 auto;
+  background-color: #e6ececc9;
+  text-align: center;
+  overflow: hidden;
+  p {
+    padding-top: 2rem;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 200;
+  }
+  span {
+    font-weight: bold;
+  }
+  .first-google-ads-button {
+    outline: none;
+    border: none;
+    background-color: #4285f5;
+    color: white;
+    width: 200px;
+    // height: 30px;
+    font-size: 2rem;
+    border-radius: 2px;
+    // display: inline-block;
+    padding: 1rem;
+    box-shadow: 0.5px 0.5px 3px 0px black;
+    cursor: pointer;
+    &:hover {
+      background-color: #316dd6;
+    }
+  }
+  .second-google-ads-button {
+    outline: none;
+    border: none;
+    color: #a8c7ea;
+    background-color: white;
+    width: 200px;
+    // height: 30px;
+    padding: 1rem;
+    border-radius: 2px;
+    font-size: 2rem;
+    box-shadow: 0.5px 0.5px 3px 0px black;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(241, 241, 241);
+      color: white;
+    }
+  }
+}
+
+// second part img
+.second-part-img-container,
+.third-part-img-container {
+  // transform: skewY(-0.3deg);
+  width: 100%;
+  margin: 0 auto;
+  height: 680px;
+  background-color: #151515;
+  overflow: hidden;
+  // &::before{
+
+  //     border-bottom: 680px solid #151515;
+  //     border-right: 190px solid transparent;
+  //     content: "";
+  //     height: 0;
+  //     left: 45.99%;
+  //     position: absolute;
+  //     -webkit-transition: .5s ease;
+  //     transition: .5s ease;
+  //     width: 0;
+  //     z-index: 1;
+  //     display: block
+  // }
+  > img {
+    width: 70%;
+    height: 680px;
+    position: relative;
+    left: 300px;
+    // right: 0rem;
+    // z-index: -1;
+    transform: skew(-3deg);
+  }
+  .marvel-logo {
+    width: 170px;
+    height: 170px;
+    display: inline-block;
+    position: relative;
+    left: -15px;
+  }
+  .logo-and-links,
+  .logo-and-links-third {
     width: 30%;
     text-align: start;
     position: relative;
-    top:18rem;
+    top: 18rem;
     left: 20rem;
-        p{
-            color: rgb(255, 255, 255);
-            font-size: 2.5rem;
-            margin-bottom: 4rem;
-        }
-
-        button{
-            offset: none;
-            border: none;
-            color: $white;
-            font-size: 2rem;
-            padding: 1rem;
-            font-weight: bold;
-            // font-family: 'Times New Roman', Times, serif;
-            background-color: transparent;
-            // border-right: 1px solid white;
-            // border-top: 1px solid white;
-  
-            // border-bottom: 1px solid white;
-            // border-left: 1px solid white;
-            cursor: pointer;
-            transition: all .1s ease;
-            margin-left: 5rem;
-            position: relative;
-            &::before{
-                content: "";
-                position: absolute;
-                top: -10px;
-                right: -10px;
-                border-right: 2px solid $white;
-                border-top: 2px solid $white ;
-                width: 100%;
-                height: 100%;
-            }
-            &::after{
-                content: "";
-                position: absolute;
-                bottom: -10px;
-                left: -10px;
-                border-left: 2px solid $white;
-                border-bottom: 2px solid $white ;
-                width: 100%;
-                height: 100%;
-            }
-            &:hover ::before{
-                border-color: $borderColor;
-            }
-            &:hover{
-                background-color: $redColor;
-            }
-            
-
-        }
+    p {
+      color: rgb(255, 255, 255);
+      font-size: 2.5rem;
+      margin-bottom: 4rem;
     }
-}
-.second-main-part-img-btn:hover .marvel-logo{
-    background-color: $redColor;
-    width: 20px;
-}
 
+    button {
+      offset: none;
+      border: none;
+      color: $white;
+      font-size: 2rem;
+      padding: 1rem;
+      font-weight: bold;
+      // font-family: 'Times New Roman', Times, serif;
+      background-color: transparent;
+      // border-right: 1px solid white;
+      // border-top: 1px solid white;
+
+      // border-bottom: 1px solid white;
+      // border-left: 1px solid white;
+      cursor: pointer;
+      transition: all 0.1s ease;
+      margin-left: 5rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        border-right: 2px solid $white;
+        border-top: 2px solid $white;
+        width: 100%;
+        height: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        border-left: 2px solid $white;
+        border-bottom: 2px solid $white;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover ::before {
+        border-color: $borderColor;
+      }
+      &:hover {
+        background-color: $redColor;
+      }
+    }
+  }
+}
+.second-main-part-img-btn:hover .marvel-logo {
+  background-color: $redColor;
+  width: 20px;
+}
 
 // second part widget start
-.second-part-widget-container,.third-part-widget-container{
-    margin: o auto;
-    width: 80% ;
-    height: auto;
-    margin: 0 auto;
-    background-color: $white;
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    position: relative;
-    top: -5rem;
-    overflow: hidden;
-
+.second-part-widget-container,
+.third-part-widget-container {
+  margin: o auto;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  top: -5rem;
+  overflow: hidden;
 }
-.second-part-widget-img,.third-part-widget-img{
-    min-width: 200px;
-    width: 80%;
-    // height: 150px;
+.second-part-widget-img,
+.third-part-widget-img {
+  min-width: 200px;
+  width: 80%;
+  // height: 150px;
 }
-.second-part-widgets-conatiner,.third-part-widgets-container{
-    font-size: 2.1rem;
+.second-part-widgets-conatiner,
+.third-part-widgets-container {
+  font-size: 2.1rem;
+  margin-top: 2rem;
+  width: 245%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  h5 {
+    color: $grayColor;
+  }
+  a {
+    color: $balck;
+    &:hover {
+      color: $redColor;
+    }
+  }
+  #second-part-widget-last-img-title {
     margin-top: 2rem;
-    width: 245%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-    h5{
-        color: $grayColor;
+  }
+  img {
+    position: relative;
+    // opacity: .6;
+    transition: transform 0.4s ease;
+    &:hover {
+      transform: scale(1.01);
+      opacity: 0.8;
     }
-    a{
-        color: $balck;
-        &:hover{
-            color: $redColor;
-        }
-    }
-    #second-part-widget-last-img-title{
-        margin-top: 2rem;
-    }
-    img{
-        position: relative;
-        // opacity: .6;
-        transition: transform .4s ease;
-        &:hover{
-            transform: scale(1.01);
-            opacity: .8;
-        }
-        // &::after{
-        //     content: "";
-        //     border: 10px solid black;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 100%;
-        //     z-index: 1;
-        //     background-color: red;
-        // }
-        // &:hover ::after{
-        //     transform: scale(1.1);
-        //     background-color: rgb(90, 9, 9);
-        // }
-    }
-
+    // &::after{
+    //     content: "";
+    //     border: 10px solid black;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 1;
+    //     background-color: red;
+    // }
+    // &:hover ::after{
+    //     transform: scale(1.1);
+    //     background-color: rgb(90, 9, 9);
+    // }
+  }
 }
-.third-part-widget-container{
-
-    flex-wrap: wrap;
+.third-part-widget-container {
+  flex-wrap: wrap;
 }
-.third-part-widgets-container{
-    max-width:200px ;
+.third-part-widgets-container {
+  max-width: 200px;
 }
-
-
-
 
 // third main part styles start
 
-.third-part-main{
-    margin-top: 11rem;
+.third-part-main {
+  margin-top: 11rem;
 }
-.third-part-widgets-container{
-    span{
-        color: $grayColor;
-        font-size: 1.8rem;
-        margin-top: .8rem;
-    }
+.third-part-widgets-container {
+  span {
+    color: $grayColor;
+    font-size: 1.8rem;
+    margin-top: 0.8rem;
+  }
 }
-.third-part-widgets-title{
-    margin-top: 1rem;
+.third-part-widgets-title {
+  margin-top: 1rem;
 }
-
-
-
 
 // news start #####################################
 
-.news-container-container{
-    margin-top: 3rem;
+.news-container-container {
+  margin-top: 3rem;
 }
 
+.news-container {
+  width: 70%;
+  // height: 900px;
+  // heght will be deleted
+  margin: 0 auto;
+  // background-color: red;
+  display: flex;
+  justify-content: space-between;
 
-
-.news-container{
-    width: 70%;
-    // height: 900px;   
-    // heght will be deleted 
-    margin: 0 auto;
-    // background-color: red;
-    display: flex;
-    justify-content: space-between;
-    
-
-    a{
-        text-decoration: none;
-        color: black;
-        &:hover{
-            color: $redColor;
-        }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $redColor;
     }
-    span{
-        font-size: 1.6rem;
-        font-weight: 300;
-        color: $grayColor;
-    }
-    
-    
-    .the-latest{
-        font-size: 2.5rem;
-        width: 60%;
-        // background-color: blue;
-        padding: 2rem;
-        position: relative;
-        h1{
-            font-size: 3.4rem;
-        }
-    }
+  }
+  span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $grayColor;
+  }
 
-
-
-    .the-hype-box{
-        width: 20%;
-        // background-color: green;
-        padding: 1rem;
-        padding-top: 2rem;
-        position: relative;
-        font-size: 2rem;
-
-    }
-
-    
-
-}
-
-
-
-.the-latest::before{
-    content: "";
-    position: absolute;
-    top: 5px;
-    width: 3px;
-    height: 30px;
-    transform: rotate(45deg);
-    margin-left: 7.5rem;
-    background-color: rosybrown;
-    
-}
-.the-latest::after{
-    content: "";
-    position: absolute;
-    top: 65px;
-    width: 3px;
-    height: 30px;
-    transform: rotate(45deg);
-    margin-left: 2rem;
-    background-color: rosybrown;
-}
-
-
-.hype-box-title-design{
-    .design-div-1{
-        position: absolute;
-        // left: 4.5rem;
-        top: 3.4rem;
-        width: 200px;
-        height: 2px;
-        background-color: rosybrown;
-        // margin-left: 3.5rem;
-    
-    }
-    .design-div-2{
-        position: absolute;
-        top: 4.6rem;
-        left: -2.4rem;
-        width: 40px;
-        height: 3px;
-        background-color: rosybrown;
-        transform: rotate(140deg);
-        // margin-top: 1rem;
-    }
-    .design-div-3{
-        height: 70px;
-        width: 3px;
-        position: absolute;
-        left: -2rem;
-        top: 6rem;
-        // margin-left: .4rem;
-        // margin-top: 1rem;
-        background-color: rosybrown;
-    }
-}
-
-.hype-box-title-design-end{
+  .the-latest {
+    font-size: 2.5rem;
+    width: 60%;
+    // background-color: blue;
+    padding: 2rem;
     position: relative;
-    
-    .design-div-1{
-        position: absolute;
-        left: 6.5rem;
-        bottom: 3.4rem;
-        width: 200px;
-        height: 2px;
-        background-color: rosybrown;
-        // margin-left: 3.5rem;
-    
+    h1 {
+      font-size: 3.4rem;
     }
-    .design-div-2{
-        position: absolute;
-        bottom: 4.6rem;
-        right: -2.4rem;
-        width: 40px;
-        height: 3px;
-        background-color: rosybrown;
-        transform: rotate(140deg);
-        // margin-top: 1rem;
-    }
-    .design-div-3{
-        height: 70px;
-        width: 2px;
-        position: absolute;
-        right: -2rem;
-        bottom: 6rem;
-        // margin-left: .4rem;
-        // margin-top: 1rem;
-        background-color: rosybrown;
-    }
-}
+  }
 
-
-.the-hype-box-title{
+  .the-hype-box {
+    width: 20%;
+    // background-color: green;
+    padding: 1rem;
     padding-top: 2rem;
-    // padding-left: 3rem;
-    width: 90%;
+    position: relative;
+    font-size: 2rem;
+  }
 }
 
-.first-latest-object{
-    padding-top: 3rem;
+.the-latest::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 3px;
+  height: 30px;
+  transform: rotate(45deg);
+  margin-left: 7.5rem;
+  background-color: rosybrown;
 }
-.the-latest-objects{
-    margin-top: 2rem;
-    border-bottom: 2px solid $borderColor;
-    padding-bottom: 1rem;
+.the-latest::after {
+  content: "";
+  position: absolute;
+  top: 65px;
+  width: 3px;
+  height: 30px;
+  transform: rotate(45deg);
+  margin-left: 2rem;
+  background-color: rosybrown;
+}
+
+.hype-box-title-design {
+  .design-div-1 {
+    position: absolute;
+    // left: 4.5rem;
+    top: 3.4rem;
+    width: 200px;
+    height: 2px;
+    background-color: rosybrown;
+    // margin-left: 3.5rem;
+  }
+  .design-div-2 {
+    position: absolute;
+    top: 4.6rem;
+    left: -2.4rem;
+    width: 40px;
+    height: 3px;
+    background-color: rosybrown;
+    transform: rotate(140deg);
+    // margin-top: 1rem;
+  }
+  .design-div-3 {
+    height: 70px;
+    width: 3px;
+    position: absolute;
+    left: -2rem;
+    top: 6rem;
+    // margin-left: .4rem;
+    // margin-top: 1rem;
+    background-color: rosybrown;
+  }
+}
+
+.hype-box-title-design-end {
+  position: relative;
+
+  .design-div-1 {
+    position: absolute;
+    left: 6.5rem;
+    bottom: 3.4rem;
+    width: 200px;
+    height: 2px;
+    background-color: rosybrown;
+    // margin-left: 3.5rem;
+  }
+  .design-div-2 {
+    position: absolute;
+    bottom: 4.6rem;
+    right: -2.4rem;
+    width: 40px;
+    height: 3px;
+    background-color: rosybrown;
+    transform: rotate(140deg);
+    // margin-top: 1rem;
+  }
+  .design-div-3 {
+    height: 70px;
+    width: 2px;
+    position: absolute;
+    right: -2rem;
+    bottom: 6rem;
+    // margin-left: .4rem;
+    // margin-top: 1rem;
+    background-color: rosybrown;
+  }
+}
+
+.the-hype-box-title {
+  padding-top: 2rem;
+  // padding-left: 3rem;
+  width: 90%;
+}
+
+.first-latest-object {
+  padding-top: 3rem;
+}
+.the-latest-objects {
+  margin-top: 2rem;
+  border-bottom: 2px solid $borderColor;
+  padding-bottom: 1rem;
+  display: flex;
+  div {
     display: flex;
-    div{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin-left: 2.2rem;
-
+    flex-direction: column;
+    width: 50%;
+    margin-left: 2.2rem;
+  }
+  img {
+    width: 100%;
+    min-width: 280px;
+    background-position: right;
+    background-size: contain;
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.01);
+      opacity: 0.8;
     }
-    img{
-        width: 100%;
-        min-width: 280px;
-        background-position:right;
-        background-size:contain;
-        transition: .1s ease-in;
-        &:hover{
-            transform: scale(1.01);
-            opacity: .8;
-        }
-    }
-    .news-hype-object-img{
-        width: 50%;
-        overflow: hidden;
-        height: 300px;
-    }
-    span{
-        margin: 1rem 0;
-    }
+  }
+  .news-hype-object-img {
+    width: 50%;
+    overflow: hidden;
+    height: 300px;
+  }
+  span {
+    margin: 1rem 0;
+  }
 }
 // .second-news-hype-object-img{
 //     height: 200px;
 // }
 
-.first-hype-box-object{
-    padding-top: 3rem;
+.first-hype-box-object {
+  padding-top: 3rem;
 }
-.the-hype-box-objects{
-    margin-top: 2rem;
-    border-bottom: 2px solid $borderColor;
-    padding-bottom: 1rem;
+.the-hype-box-objects {
+  margin-top: 2rem;
+  border-bottom: 2px solid $borderColor;
+  padding-bottom: 1rem;
+  display: flex;
+
+  div {
     display: flex;
-    
-    div{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        margin-left: 2rem;
-        a{
-            margin-top: 1rem;
-        }
+    flex-direction: column;
+    width: 70%;
+    margin-left: 2rem;
+    a {
+      margin-top: 1rem;
     }
-    img{
-        width: 100%;
-        min-width: 100px;
-        transition: .1s ease-in;
-        &:hover{
-            transform: scale(1.01);
-            opacity: .8;
-        }
+  }
+  img {
+    width: 100%;
+    min-width: 100px;
+    transition: 0.1s ease-in;
+    &:hover {
+      transform: scale(1.01);
+      opacity: 0.8;
     }
-    .news-hype-object-img{
-        width: 30%;
-        overflow: hidden;
-        height: 200px;
-    }
-    
+  }
+  .news-hype-object-img {
+    width: 30%;
+    overflow: hidden;
+    height: 200px;
+  }
 }
 
-.load-more-btn-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.load-more-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.load-more-btn{
-    offset: none;
+.load-more-btn {
+  offset: none;
+  border: none;
+  color: $balck;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  // margin-left: 50%;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-right: 2px solid $balck;
+    border-top: 2px solid $balck;
+    width: 100%;
+    height: 100%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    border-left: 2px solid $balck;
+    border-bottom: 2px solid $balck;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    background-color: $redColor;
+  }
+}
+.last-chile-hype-box-object {
+  border: none;
+}
+
+// main end
+
+// footer and top layer start
+
+.top-layer-footer {
+  color: $white;
+  background-color: black;
+  padding: 10rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  h3 {
+    color: $redColor;
+    letter-spacing: 0.8rem;
+  }
+  h4 {
+    letter-spacing: 0.2rem;
+  }
+  p {
+    margin-top: 10rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    letter-spacing: 0.1rem;
+  }
+  button {
     border: none;
-    color: $balck;
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all .1s ease;
-    // margin-left: 50%;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
-    text-align: center;
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        top: -10px;
-        right: -10px;
-        border-right: 2px solid $balck;
-        border-top: 2px solid $balck ;
-        width: 100%;
-        height: 100%;
-    }
-    &::after{
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: -10px;
-        border-left: 2px solid $balck;
-        border-bottom: 2px solid $balck ;
-        width: 100%;
-        height: 100%;
-    }
-    &:hover{
-        background-color: $redColor;
-    }
-}
-.last-chile-hype-box-object{
-    border: none;
-}
-
-
-// main end 
-
-
-// footer and top layer start 
-
-.top-layer-footer{
+    margin-top: 1.5rem;
     color: $white;
-    background-color: black;
-    padding: 10rem;
-    padding-bottom: 2rem;
-    text-align: center;
-    h3{
-        color: $redColor;
-        letter-spacing: .8rem;
+    background-color: $redColor;
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-in;
+    &:hover {
+      transform: scale(1.03);
+      color: $redColor;
+      background-color: $white;
     }
-    h4{
-        letter-spacing: .2rem;
+  }
+}
+
+.logo-and-links-third {
+  span {
+    color: rgb(184, 183, 183);
+  }
+  h2 {
+    color: rgb(138, 133, 133);
+  }
+}
+
+// footer nav
+
+footer {
+  margin-top: 0;
+  background-color: #151515;
+  font-size: 2rem;
+  ul {
+    list-style: none;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $grayColor;
     }
-    p{
-        margin-top: 10rem;
-        font-size: 1.5rem;
+  }
+  .footer-70-container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+  }
+  .all-footer-nav-parts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > div {
+      display: flex;
     }
-    h1{
-        letter-spacing: .1rem;
-    }
-    button{
-        border: none;
-        font-size: 3.5rem;
-        font-weight: bold;
-        margin-top: 1.5rem;
-        color: $white;
+    .logo-and-first-links-container {
+      width: 23%;
+      h1 {
+        position: relative;
+        top: 2rem;
+        font-size: 10rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
         background-color: $redColor;
-        cursor: pointer;
-        padding:1.5rem ;
-        border-radius: .5rem;
-        transition: .2s ease-in;
-        &:hover{
-            transform: scale(1.03);
-            color: $redColor;
-            background-color: $white;
+        padding: 0 0.6rem;
+        &:hover {
+          color: white;
         }
-    }
-}
-
-
-.logo-and-links-third{
-    span{
-        color: rgb(184, 183, 183);
-    }
-    h2{
-        color: rgb(138, 133, 133);
-    }
-}
-
-// footer nav 
-
-
-footer{
-    margin-top: 0;
-    background-color: #151515;
-    font-size: 2rem;
-    ul{
-        list-style: none;
-    }
-    a{
-        color: white;
-        &:hover{
-            color: $grayColor;
+      }
+      .footer-logo-res {
+        h1 {
+          position: relative;
+          top: 2rem;
+          font-size: 10rem;
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+          background-color: $redColor;
+          padding: 0 0.6rem;
+          &:hover {
+            color: white;
+          }
+          display: none;
         }
+      }
+      li {
+        margin: 1rem 0;
+        font-weight: bold;
+      }
     }
-    .footer-70-container{
-        width: 75%;
-        margin: 0 auto;
-        padding-top: 4.5rem;
-        padding-bottom: 4rem;
+    .second-footer-part {
+      width: 23%;
+      li {
+        margin: 1rem 0;
+      }
+      a {
+        font-size: 1.9rem;
+        font-weight: lighter;
+      }
     }
-    .all-footer-nav-parts{
+    .marvel-insider-and-unlimited {
+      width: 23%;
+      flex-direction: column;
+      padding-bottom: 2rem;
+      img {
+        width: 4rem;
+        margin-right: 1rem;
+        // padding:2rem ;
+        // padding-bottom: 3rem;
+      }
+      .marvel-insider-and-unlimited-inside-container {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        > div{
-            display: flex;
-        }
-        .logo-and-first-links-container{
-            width: 23%;
-            h1{
-                position: relative;
-                top: 2rem;
-                font-size: 10rem;
-                margin-top: .5rem;
-                margin-bottom: 0;
-                background-color: $redColor;
-                padding:0 .6rem ;
-                &:hover{
-                    color: white;
-                }
-                
-            }
-            .footer-logo-res{
-                h1{
-                    position: relative;
-                    top: 2rem;
-                    font-size: 10rem;
-                    margin-top: .5rem;
-                    margin-bottom: 0;
-                    background-color: $redColor;
-                    padding:0 .6rem ;
-                    &:hover{
-                        color: white;
-                    }
-                    display: none;
-        
-                }
-            }
-            li{
-                margin: 1rem 0;
-                font-weight: bold;
-            }
-        }
-        .second-footer-part{
-            width: 23%;
-            li{
-                margin: 1rem 0;
-            }
-            a{
-                font-size: 1.9rem;
-                font-weight: lighter;
-            }
-        }
-        .marvel-insider-and-unlimited{
-            width: 23%;
-            flex-direction: column;
-            padding-bottom: 2rem;
-            img{
-                width: 4rem;
-                margin-right: 1rem;
-                // padding:2rem ;
-                // padding-bottom: 3rem;
-            }
-            .marvel-insider-and-unlimited-inside-container{
-                display: flex;
-
-            }
-            a{
-                margin: 1rem 0;
-                
-            }
-            h4{
-                font-size: 1.9rem;
-                letter-spacing: .2rem;
-                margin:.5rem 0;
-            }
-            p{
-                margin: 0;
-                color: $grayColor;
-                font-size: 1.6rem;
-            }
-        }
-        .social-media-part{
-            width: 23%;
-            text-align: center;
-            flex-direction: column;
-            h3{
-                color: $grayColor;
-            }
-            div{
-                display: flex;
-                flex-wrap: wrap;
-                text-align: center;
-                width: 70%;
-                padding-left: 6.5rem;
-                padding-bottom: 3rem;
-            }
-            .socialmedia-svg-footer{
-                font-size: 3rem;
-                margin: .5rem 1rem;
-                &:hover path{
-                    fill: white;
-                    transform: scale(1.2);
-                }
-            }
-            .socialmedia-svg-footer path{
-                transition: .1s ease-in;
-                fill: $grayColor;
-            }
-        }
-        
+      }
+      a {
+        margin: 1rem 0;
+      }
+      h4 {
+        font-size: 1.9rem;
+        letter-spacing: 0.2rem;
+        margin: 0.5rem 0;
+      }
+      p {
+        margin: 0;
+        color: $grayColor;
+        font-size: 1.6rem;
+      }
     }
-    .policies-footer{
-        margin-top: 3rem;
-        ul{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+    .social-media-part {
+      width: 23%;
+      text-align: center;
+      flex-direction: column;
+      h3 {
+        color: $grayColor;
+      }
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 70%;
+        padding-left: 6.5rem;
+        padding-bottom: 3rem;
+      }
+      .socialmedia-svg-footer {
+        font-size: 3rem;
+        margin: 0.5rem 1rem;
+        &:hover path {
+          fill: white;
+          transform: scale(1.2);
         }
-        li{
-            padding: 1rem;
-            margin: 0 1.5rem;
-        }
-        a{
-            font-size: 1.5rem;
-            color: $grayColor;
-            &:hover{
-                color: white;
-            }
-            
-        }
+      }
+      .socialmedia-svg-footer path {
+        transition: 0.1s ease-in;
+        fill: $grayColor;
+      }
     }
+  }
+  .policies-footer {
+    margin-top: 3rem;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    li {
+      padding: 1rem;
+      margin: 0 1.5rem;
+    }
+    a {
+      font-size: 1.5rem;
+      color: $grayColor;
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }
-// footer end 
+// footer end
 
+// responsive
 
-
-
-// responsive 
-
-
-
-// phone screen 
-@media (max-width:480px) {
-    .first-main-part{
-        ul{
-            // display: none;
-            overflow: auto;
-            height: 10rem;
-            padding-top: 0;
-            font-size: 1.1rem;
-            top: -4rem;
-        }
-        li{
-            padding-top: 1rem;
-        }
-        .socialmedia-svg{
-            padding: 0;
-            margin-left: -2.4rem;
-        }
+// phone screen
+@media (max-width: 480px) {
+  .first-main-part {
+    ul {
+      // display: none;
+      overflow: auto;
+      height: 10rem;
+      padding-top: 0;
+      font-size: 1.1rem;
+      top: -4rem;
     }
-
-
-    .news-container{
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        .the-latest{
-            width: 90%;
-        }
-        .the-hype-box{
-            width: 60%;
-        }
-      }
-      .second-part-widget-container,.third-part-widget-container{
-          overflow: scroll;
-        //   padding-left: 7rem;
-          flex-wrap: wrap;
-        img{
-            min-width: 150px;
-        }
-        .second-part-widgets-conatiner,.third-part-widgets-container{
-            font-size: 2rem;
-              width: 100%;
-              max-width: 300px;
-          }
-      }
-      .second-part-img-container,.third-part-img-container{
-        img{
-            display: none;
-        }
-        .logo-and-links,.logo-and-links-third{
-            width: 80%;
-            margin: 0 auto;
-            text-align: center;
-            top: 50;
-            left: 0;
-            padding: 3rem;
-            p{
-                font-size: 1.7rem;
-
-            }
-            button{
-                font-size: 1.7rem;
-            }
-        }
+    li {
+      padding-top: 1rem;
     }
-    footer{
-        .footer-70-container{
-            width: 90%;
-        }
-        .all-footer-nav-parts{
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            .logo-and-first-links-container{
-                width: 90%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .second-footer-part{
-                width: 90%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .marvel-insider-and-unlimited{
-                width: 90%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .social-media-part{
-                width: 90%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-
-            }
-            ul{
-                padding: 0;
-            }
-            .social-media-part div{
-                padding: 0rem;
-                padding-left: 2rem;
-                width: 100%;
-            }
-            > div{
-                // background-color: red;
-                margin: 6rem;
-            }
-            .footer-logo{
-                display: none;
-            }
-        }
-
+    .socialmedia-svg {
+      padding: 0;
+      margin-left: -2.4rem;
     }
-    .policies-footer{
-        ul{
-            flex-direction: column;
-        }
-    }
-    .main-big-logo{
-        display: none;
-    }
-    .main-big-logo-res{
-        display: inline-block;
-        padding-left: .5rem;
-    }
-    .top-marvel-umlimited{
-        display: none;
-    }
-    nav{
-        display: none;
-    }
-    .hamburger-menu{
-        padding: 1rem;
-        display: block;
-        font-size: 4rem;
-        position: relative;
-        top: .5rem;
-        // left: .7rem;
-        border-right: 2px solid $borderColor;
-        border: none;
-    }
-    .svg-icon-a{
-        border-left: 2px solid $borderColor;
-        border: none;
-    }
-    .header-div{
-        justify-content: space-between;
-        padding: 0;
-    }
-    .top-sign{
-        border: none;
-        font-size:1.7rem ;
-    }
-    .third-layer-nav{
-        padding-left: 4rem;
-        font-size: 1.4rem;
-        img{
-            display: none;
-        }
-    }
-    .top-sign{
-        left: 0;
+  }
 
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-// tablet 
-
-@media (min-width:481px) and (max-width:760px) {
-    .news-container{
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        .the-latest{
-            width: 90%;
-        }
-        .the-hype-box{
-            width: 60%;
-        }
-      }
-
-
-      .second-part-widget-container,.third-part-widget-container{
-          overflow: scroll;
-        //   padding-left: 7rem;
-          flex-wrap: wrap;
-        img{
-            min-width: 150px;
-        }
-        .second-part-widgets-conatiner,.third-part-widgets-container{
-            font-size: 1.8rem;
-              width: 100%;
-              max-width: 160px;
-          }
-      }
-
-
-      .second-part-img-container,.third-part-img-container{
-        img{
-            display: none;
-        }
-        .logo-and-links,.logo-and-links-third{
-            width: 100%;
-           text-align: center;
-           top: 50;
-           left: 0;
-        }
-    }
-    .first-main-part{
-        ul{
-            margin: 0 auto;
-            width: 90%;
-            // overflow-x: scroll;
-            height: 11rem;
-            top:-6rem;
-            text-align: center;
-            padding-right: 1rem;
-            padding-left: 1rem;
-            font-size: 1.5rem;
-            
-        }
-        li{
-            margin: 1rem;
-        }
-        .facebook-svg-li{
-            margin-left: 2.5rem;
-        }
-        .socialmedia-svg{
-            margin-left: -2rem;
-            padding: 1rem;
-        }
-    }
-    footer{
-        .footer-70-container{
-            width: 90%;
-        }
-        .all-footer-nav-parts{
-            justify-content: center;
-            flex-wrap: wrap;
-            .logo-and-first-links-container{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .second-footer-part{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .marvel-insider-and-unlimited{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .social-media-part{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-
-            }
-            ul{
-                padding: 0;
-            }
-          
-            > div{
-                // background-color: red;
-                margin: 6rem;
-            }
-            .footer-logo{
-                display: none;
-            }
-        }
-
-    }
-    .main-big-logo{
-        display: none;
-    }
-    .main-big-logo-res{
-        display: inline-block;
-        padding-left: .5rem;
-    }
-    .top-marvel-umlimited{
-        display: none;
-    }
-    nav{
-        display: none;
-    }
-    .hamburger-menu{
-        padding: 1rem;
-        display: block;
-        font-size: 4rem;
-        position: relative;
-        top: .5rem;
-        // left: .7rem;
-        border-right: 2px solid $borderColor;
-        border: none;
-    }
-    .svg-icon-a{
-        border-left: 2px solid $borderColor;
-        border: none;
-    }
-    .header-div{
-        justify-content: space-between;
-        padding: 0;
-    }
-    .top-sign{
-        border: none;
-    }
-    .third-layer-nav{
-        padding-left: 4rem;
-    } .top-sign{
-        left: 0;
-    }
-    .third-layer-nav{
-        img{
-            display: none;
-        }
-    }
-   
-}
-
-
-
-
-
-
-
-// laptop 
-
-@media (min-width:761px) and (max-width:960px) {
-    .news-container{
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        .the-latest{
-            width: 90%;
-        }
-        .the-hype-box{
-            width: 60%;
-        }
-      }
-      .second-part-widget-container,.third-part-widget-container{
-          overflow: scroll;
-        //   padding-left: 7rem;
-          flex-wrap: wrap;
-        img{
-            min-width: 150px;
-        }
-        .second-part-widgets-conatiner,.third-part-widgets-container{
-            font-size: 2rem;
-              width: 100%;
-              max-width: 270px;
-          }
-      }
-      .second-part-img-container,.third-part-img-container{
-          img{
-              display: none;
-          }
-          .logo-and-links,.logo-and-links-third{
-              width: 100%;
-             text-align: center;
-             top: 50;
-             left: 0;
-          }
-      }
-      .first-main-part{
-        ul{
-            overflow-x: scroll;
-            height: 10rem;
-            top: -6rem;
-        }
-    }
-    footer{
-        .footer-70-container{
-            width: 90%;
-        }
-        .all-footer-nav-parts{
-            justify-content: center;
-            flex-wrap: wrap;
-            .logo-and-first-links-container{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .second-footer-part{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .marvel-insider-and-unlimited{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-            }
-            .social-media-part{
-                width: 30%;
-                justify-content: center;
-                li{
-                    text-align: center;
-                }
-
-            }
-            .social-media-part div{
-                padding: 0;
-                padding-left: 3.5rem;
-            }
-            > div{
-                // background-color: red;
-                margin: 6rem;
-            }
-            .footer-logo{
-                display: none;
-            }
-            
-        }
-        
-        
-    }
-    .main-big-logo{
-        display: none;
-    }
-    .main-big-logo-res{
-        display: inline-block;
-        padding-left: .5rem;
-    }
-    nav{
-        ul{
-            padding-left: 0;
-        }
-    }
-    .third-layer-nav{
-        img{
-            display: none;
-        }
-    }
-    .top-marvel-umlimited{
-        img{
-            display: none;
-        }
-    }
-}
-
-
-
-
-
-
-
-@media (min-width:961px) and (max-width:1280px) {
-  .news-container{
+  .news-container {
     flex-direction: column;
     align-items: center;
     width: 90%;
-    .the-latest{
+    .the-latest {
+      width: 90%;
+    }
+    .the-hype-box {
+      width: 60%;
+    }
+  }
+  .second-part-widget-container,
+  .third-part-widget-container {
+    overflow: scroll;
+    //   padding-left: 7rem;
+    flex-wrap: wrap;
+    img {
+      min-width: 150px;
+    }
+    .second-part-widgets-conatiner,
+    .third-part-widgets-container {
+      font-size: 2rem;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .second-part-img-container,
+  .third-part-img-container {
+    img {
+      display: none;
+    }
+    .logo-and-links,
+    .logo-and-links-third {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      top: 50;
+      left: 0;
+      padding: 3rem;
+      p {
+        font-size: 1.7rem;
+      }
+      button {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  footer {
+    .footer-70-container {
+      width: 90%;
+    }
+    .all-footer-nav-parts {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .logo-and-first-links-container {
         width: 90%;
-    }
-    .the-hype-box{
-        width: 60%;
-    }
-    }
-    .second-part-widget-container,.third-part-widget-container{
-        overflow: scroll;
-        // padding-left: 7rem;
-        flex-wrap: wrap;
-        img{
-            min-width: 150px;
+        justify-content: center;
+        li {
+          text-align: center;
         }
-        .second-part-widgets-conatiner,.third-part-widgets-container{
-            font-size: 2rem;
-              width: 100%;
-              max-width: 300px;
-          }
-      
-    }
-    .second-part-img-container,.third-part-img-container{
-        button{
-            margin: 2rem;
+      }
+      .second-footer-part {
+        width: 90%;
+        justify-content: center;
+        li {
+          text-align: center;
         }
-    }
-    .first-main-part{
-        ul{
-            overflow-x: scroll;
+      }
+      .marvel-insider-and-unlimited {
+        width: 90%;
+        justify-content: center;
+        li {
+          text-align: center;
         }
+      }
+      .social-media-part {
+        width: 90%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      ul {
+        padding: 0;
+      }
+      .social-media-part div {
+        padding: 0rem;
+        padding-left: 2rem;
+        width: 100%;
+      }
+      > div {
+        // background-color: red;
+        margin: 6rem;
+      }
+      .footer-logo {
+        display: none;
+      }
     }
+  }
+  .policies-footer {
+    ul {
+      flex-direction: column;
+    }
+  }
+  .main-big-logo {
+    display: none;
+  }
+  .main-big-logo-res {
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+  .top-marvel-umlimited {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger-menu {
+    padding: 1rem;
+    display: block;
+    font-size: 4rem;
+    position: relative;
+    top: 0.5rem;
+    // left: .7rem;
+    border-right: 2px solid $borderColor;
+    border: none;
+  }
+  .svg-icon-a {
+    border-left: 2px solid $borderColor;
+    border: none;
+  }
+  .header-div {
+    justify-content: space-between;
+    padding: 0;
+  }
+  .top-sign {
+    border: none;
+    font-size: 1.7rem;
+  }
+  .third-layer-nav {
+    padding-left: 4rem;
+    font-size: 1.4rem;
+    img {
+      display: none;
+    }
+  }
+  .top-sign {
+    left: 0;
+  }
+}
 
-    footer{
-        .footer-70-container{
-            width: 90%;
-        }
+// tablet
 
+@media (min-width: 481px) and (max-width: 760px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    .the-latest {
+      width: 90%;
     }
-    .third-layer-nav{
-        img{
-            display: none;
-        }
+    .the-hype-box {
+      width: 60%;
     }
-    .top-marvel-umlimited{
-        img{
-            display: none;
-        }
-    }
+  }
 
+  .second-part-widget-container,
+  .third-part-widget-container {
+    overflow: scroll;
+    //   padding-left: 7rem;
+    flex-wrap: wrap;
+    img {
+      min-width: 150px;
+    }
+    .second-part-widgets-conatiner,
+    .third-part-widgets-container {
+      font-size: 1.8rem;
+      width: 100%;
+      max-width: 160px;
+    }
+  }
+
+  .second-part-img-container,
+  .third-part-img-container {
+    img {
+      display: none;
+    }
+    .logo-and-links,
+    .logo-and-links-third {
+      width: 100%;
+      text-align: center;
+      top: 50;
+      left: 0;
+    }
+  }
+  .first-main-part {
+    ul {
+      margin: 0 auto;
+      width: 90%;
+      // overflow-x: scroll;
+      height: 11rem;
+      top: -6rem;
+      text-align: center;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      font-size: 1.5rem;
+    }
+    li {
+      margin: 1rem;
+    }
+    .facebook-svg-li {
+      margin-left: 2.5rem;
+    }
+    .socialmedia-svg {
+      margin-left: -2rem;
+      padding: 1rem;
+    }
+  }
+  footer {
+    .footer-70-container {
+      width: 90%;
+    }
+    .all-footer-nav-parts {
+      justify-content: center;
+      flex-wrap: wrap;
+      .logo-and-first-links-container {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      .second-footer-part {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      .marvel-insider-and-unlimited {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      .social-media-part {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      ul {
+        padding: 0;
+      }
+
+      > div {
+        // background-color: red;
+        margin: 6rem;
+      }
+      .footer-logo {
+        display: none;
+      }
+    }
+  }
+  .main-big-logo {
+    display: none;
+  }
+  .main-big-logo-res {
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+  .top-marvel-umlimited {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger-menu {
+    padding: 1rem;
+    display: block;
+    font-size: 4rem;
+    position: relative;
+    top: 0.5rem;
+    // left: .7rem;
+    border-right: 2px solid $borderColor;
+    border: none;
+  }
+  .svg-icon-a {
+    border-left: 2px solid $borderColor;
+    border: none;
+  }
+  .header-div {
+    justify-content: space-between;
+    padding: 0;
+  }
+  .top-sign {
+    border: none;
+  }
+  .third-layer-nav {
+    padding-left: 4rem;
+  }
+  .top-sign {
+    left: 0;
+  }
+  .third-layer-nav {
+    img {
+      display: none;
+    }
+  }
+}
+
+// laptop
+
+@media (min-width: 761px) and (max-width: 960px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    .the-latest {
+      width: 90%;
+    }
+    .the-hype-box {
+      width: 60%;
+    }
+  }
+  .second-part-widget-container,
+  .third-part-widget-container {
+    overflow: scroll;
+    //   padding-left: 7rem;
+    flex-wrap: wrap;
+    img {
+      min-width: 150px;
+    }
+    .second-part-widgets-conatiner,
+    .third-part-widgets-container {
+      font-size: 2rem;
+      width: 100%;
+      max-width: 270px;
+    }
+  }
+  .second-part-img-container,
+  .third-part-img-container {
+    img {
+      display: none;
+    }
+    .logo-and-links,
+    .logo-and-links-third {
+      width: 100%;
+      text-align: center;
+      top: 50;
+      left: 0;
+    }
+  }
+  .first-main-part {
+    ul {
+      overflow-x: scroll;
+      height: 10rem;
+      top: -6rem;
+    }
+  }
+  footer {
+    .footer-70-container {
+      width: 90%;
+    }
+    .all-footer-nav-parts {
+      justify-content: center;
+      flex-wrap: wrap;
+      .logo-and-first-links-container {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      .second-footer-part {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      .marvel-insider-and-unlimited {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      .social-media-part {
+        width: 30%;
+        justify-content: center;
+        li {
+          text-align: center;
+        }
+      }
+      .social-media-part div {
+        padding: 0;
+        padding-left: 3.5rem;
+      }
+      > div {
+        // background-color: red;
+        margin: 6rem;
+      }
+      .footer-logo {
+        display: none;
+      }
+    }
+  }
+  .main-big-logo {
+    display: none;
+  }
+  .main-big-logo-res {
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+  nav {
+    ul {
+      padding-left: 0;
+    }
+  }
+  .third-layer-nav {
+    img {
+      display: none;
+    }
+  }
+  .top-marvel-umlimited {
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    .the-latest {
+      width: 90%;
+    }
+    .the-hype-box {
+      width: 60%;
+    }
+  }
+  .second-part-widget-container,
+  .third-part-widget-container {
+    overflow: scroll;
+    // padding-left: 7rem;
+    flex-wrap: wrap;
+    img {
+      min-width: 150px;
+    }
+    .second-part-widgets-conatiner,
+    .third-part-widgets-container {
+      font-size: 2rem;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .second-part-img-container,
+  .third-part-img-container {
+    button {
+      margin: 2rem;
+    }
+  }
+  .first-main-part {
+    ul {
+      overflow-x: scroll;
+    }
+  }
+
+  footer {
+    .footer-70-container {
+      width: 90%;
+    }
+  }
+  .third-layer-nav {
+    img {
+      display: none;
+    }
+  }
+  .top-marvel-umlimited {
+    img {
+      display: none;
+    }
+  }
 }
