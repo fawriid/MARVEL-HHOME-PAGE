@@ -805,11 +805,7 @@ footer .all-footer-nav-parts .logo-and-first-links-container h1 {
 footer .all-footer-nav-parts .logo-and-first-links-container h1:hover {
   color: white;
 }
-footer
-  .all-footer-nav-parts
-  .logo-and-first-links-container
-  .footer-logo-res
-  h1 {
+footer .all-footer-nav-parts .logo-and-first-links-container .footer-logo-res h1 {
   position: relative;
   top: 2rem;
   font-size: 10rem;
@@ -819,11 +815,7 @@ footer
   padding: 0 0.6rem;
   display: none;
 }
-footer
-  .all-footer-nav-parts
-  .logo-and-first-links-container
-  .footer-logo-res
-  h1:hover {
+footer .all-footer-nav-parts .logo-and-first-links-container .footer-logo-res h1:hover {
   color: white;
 }
 footer .all-footer-nav-parts .logo-and-first-links-container li {
@@ -849,10 +841,7 @@ footer .all-footer-nav-parts .marvel-insider-and-unlimited img {
   width: 4rem;
   margin-right: 1rem;
 }
-footer
-  .all-footer-nav-parts
-  .marvel-insider-and-unlimited
-  .marvel-insider-and-unlimited-inside-container {
+footer .all-footer-nav-parts .marvel-insider-and-unlimited .marvel-insider-and-unlimited-inside-container {
   display: flex;
 }
 footer .all-footer-nav-parts .marvel-insider-and-unlimited a {
@@ -888,11 +877,7 @@ footer .all-footer-nav-parts .social-media-part .socialmedia-svg-footer {
   font-size: 3rem;
   margin: 0.5rem 1rem;
 }
-footer
-  .all-footer-nav-parts
-  .social-media-part
-  .socialmedia-svg-footer:hover
-  path {
+footer .all-footer-nav-parts .social-media-part .socialmedia-svg-footer:hover path {
   fill: white;
   transform: scale(1.2);
 }
@@ -908,13 +893,14 @@ footer .policies-footer ul {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 footer .policies-footer li {
   padding: 1rem;
   margin: 0 1.5rem;
 }
 footer .policies-footer a {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #999999;
 }
 footer .policies-footer a:hover {
@@ -950,31 +936,31 @@ footer .policies-footer a:hover {
   }
 
   .second-part-widget-container,
-  .third-part-widget-container {
+.third-part-widget-container {
     overflow: scroll;
     flex-wrap: wrap;
   }
   .second-part-widget-container img,
-  .third-part-widget-container img {
+.third-part-widget-container img {
     min-width: 150px;
   }
   .second-part-widget-container .second-part-widgets-conatiner,
-  .second-part-widget-container .third-part-widgets-container,
-  .third-part-widget-container .second-part-widgets-conatiner,
-  .third-part-widget-container .third-part-widgets-container {
+.second-part-widget-container .third-part-widgets-container,
+.third-part-widget-container .second-part-widgets-conatiner,
+.third-part-widget-container .third-part-widgets-container {
     font-size: 2rem;
     width: 100%;
     max-width: 300px;
   }
 
   .second-part-img-container img,
-  .third-part-img-container img {
+.third-part-img-container img {
     display: none;
   }
   .second-part-img-container .logo-and-links,
-  .second-part-img-container .logo-and-links-third,
-  .third-part-img-container .logo-and-links,
-  .third-part-img-container .logo-and-links-third {
+.second-part-img-container .logo-and-links-third,
+.third-part-img-container .logo-and-links,
+.third-part-img-container .logo-and-links-third {
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -983,15 +969,15 @@ footer .policies-footer a:hover {
     padding: 3rem;
   }
   .second-part-img-container .logo-and-links p,
-  .second-part-img-container .logo-and-links-third p,
-  .third-part-img-container .logo-and-links p,
-  .third-part-img-container .logo-and-links-third p {
+.second-part-img-container .logo-and-links-third p,
+.third-part-img-container .logo-and-links p,
+.third-part-img-container .logo-and-links-third p {
     font-size: 1.7rem;
   }
   .second-part-img-container .logo-and-links button,
-  .second-part-img-container .logo-and-links-third button,
-  .third-part-img-container .logo-and-links button,
-  .third-part-img-container .logo-and-links-third button {
+.second-part-img-container .logo-and-links-third button,
+.third-part-img-container .logo-and-links button,
+.third-part-img-container .logo-and-links-third button {
     font-size: 1.7rem;
   }
 
@@ -1118,31 +1104,31 @@ footer .policies-footer a:hover {
   }
 
   .second-part-widget-container,
-  .third-part-widget-container {
+.third-part-widget-container {
     overflow: scroll;
     flex-wrap: wrap;
   }
   .second-part-widget-container img,
-  .third-part-widget-container img {
+.third-part-widget-container img {
     min-width: 150px;
   }
   .second-part-widget-container .second-part-widgets-conatiner,
-  .second-part-widget-container .third-part-widgets-container,
-  .third-part-widget-container .second-part-widgets-conatiner,
-  .third-part-widget-container .third-part-widgets-container {
+.second-part-widget-container .third-part-widgets-container,
+.third-part-widget-container .second-part-widgets-conatiner,
+.third-part-widget-container .third-part-widgets-container {
     font-size: 1.8rem;
     width: 100%;
     max-width: 160px;
   }
 
   .second-part-img-container img,
-  .third-part-img-container img {
+.third-part-img-container img {
     display: none;
   }
   .second-part-img-container .logo-and-links,
-  .second-part-img-container .logo-and-links-third,
-  .third-part-img-container .logo-and-links,
-  .third-part-img-container .logo-and-links-third {
+.second-part-img-container .logo-and-links-third,
+.third-part-img-container .logo-and-links,
+.third-part-img-container .logo-and-links-third {
     width: 100%;
     text-align: center;
     top: 50;
@@ -1282,31 +1268,31 @@ footer .policies-footer a:hover {
   }
 
   .second-part-widget-container,
-  .third-part-widget-container {
+.third-part-widget-container {
     overflow: scroll;
     flex-wrap: wrap;
   }
   .second-part-widget-container img,
-  .third-part-widget-container img {
+.third-part-widget-container img {
     min-width: 150px;
   }
   .second-part-widget-container .second-part-widgets-conatiner,
-  .second-part-widget-container .third-part-widgets-container,
-  .third-part-widget-container .second-part-widgets-conatiner,
-  .third-part-widget-container .third-part-widgets-container {
+.second-part-widget-container .third-part-widgets-container,
+.third-part-widget-container .second-part-widgets-conatiner,
+.third-part-widget-container .third-part-widgets-container {
     font-size: 2rem;
     width: 100%;
     max-width: 270px;
   }
 
   .second-part-img-container img,
-  .third-part-img-container img {
+.third-part-img-container img {
     display: none;
   }
   .second-part-img-container .logo-and-links,
-  .second-part-img-container .logo-and-links-third,
-  .third-part-img-container .logo-and-links,
-  .third-part-img-container .logo-and-links-third {
+.second-part-img-container .logo-and-links-third,
+.third-part-img-container .logo-and-links,
+.third-part-img-container .logo-and-links-third {
     width: 100%;
     text-align: center;
     top: 50;
@@ -1400,25 +1386,25 @@ footer .policies-footer a:hover {
   }
 
   .second-part-widget-container,
-  .third-part-widget-container {
+.third-part-widget-container {
     overflow: scroll;
     flex-wrap: wrap;
   }
   .second-part-widget-container img,
-  .third-part-widget-container img {
+.third-part-widget-container img {
     min-width: 150px;
   }
   .second-part-widget-container .second-part-widgets-conatiner,
-  .second-part-widget-container .third-part-widgets-container,
-  .third-part-widget-container .second-part-widgets-conatiner,
-  .third-part-widget-container .third-part-widgets-container {
+.second-part-widget-container .third-part-widgets-container,
+.third-part-widget-container .second-part-widgets-conatiner,
+.third-part-widget-container .third-part-widgets-container {
     font-size: 2rem;
     width: 100%;
     max-width: 300px;
   }
 
   .second-part-img-container button,
-  .third-part-img-container button {
+.third-part-img-container button {
     margin: 2rem;
   }
 
