@@ -1119,11 +1119,25 @@ footer {
   .top-sign {
     left: 0;
   }
+  .the-latest-objects{
+    div{
+      font-size: 1.9rem;
+    }
+  }
 }
+
+
+
+
 
 // tablet
 
 @media (min-width: 481px) and (max-width: 760px) {
+  .the-latest-objects{
+    div{
+      font-size: 1.9rem;
+    }
+  }
   .news-container {
     flex-direction: column;
     align-items: center;
@@ -1282,6 +1296,8 @@ footer {
     }
   }
 }
+
+
 
 // laptop
 

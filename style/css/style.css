@@ -1089,8 +1089,16 @@ footer .policies-footer a:hover {
   .top-sign {
     left: 0;
   }
+
+  .the-latest-objects div {
+    font-size: 1.9rem;
+  }
 }
 @media (min-width: 481px) and (max-width: 760px) {
+  .the-latest-objects div {
+    font-size: 1.9rem;
+  }
+
   .news-container {
     flex-direction: column;
     align-items: center;
